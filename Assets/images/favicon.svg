@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep Obsidian to Rich Midnight -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080e14"/>
+      <stop offset="45%" stop-color="#0d1721"/>
+      <stop offset="100%" stop-color="#142433"/>
+    </linearGradient>
+
+    <!-- Luxury Gold Gradient for Monogram -->
+    <linearGradient id="goldGrad" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFF8D6"/>
+      <stop offset="25%" stop-color="#FCE581"/>
+      <stop offset="65%" stop-color="#DFB76C"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+
+    <!-- Outer Gold Rim Gradient -->
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(252, 229, 129, 0.85)"/>
+      <stop offset="45%" stop-color="rgba(223, 183, 108, 0.25)"/>
+      <stop offset="100%" stop-color="rgba(252, 229, 129, 0.7)"/>
+    </linearGradient>
+
+    <!-- Medical Cross Gradient -->
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#FCE581"/>
+      <stop offset="100%" stop-color="#DFB76C"/>
+    </linearGradient>
+
+    <!-- Ambient Cross Aura -->
+    <radialGradient id="crossGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="rgba(252, 229, 129, 0.55)"/>
+      <stop offset="55%" stop-color="rgba(252, 229, 129, 0.15)"/>
+      <stop offset="100%" stop-color="rgba(252, 229, 129, 0)"/>
+    </radialGradient>
+
+    <!-- Deep Specular Drop Shadow -->
+    <filter id="monogramShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Base Canvas -->
+  <rect x="16" y="16" width="480" height="480" rx="118" ry="118" fill="url(#bgGrad)"/>
+  <rect x="16" y="16" width="480" height="480" rx="118" ry="118" fill="none" stroke="url(#rimGrad)" stroke-width="6"/>
+
+  <!-- Inner Delicate Emblem Ring -->
+  <circle cx="256" cy="256" r="206" fill="none" stroke="rgba(223, 183, 108, 0.14)" stroke-width="1.5" stroke-dasharray="6 8"/>
+
+  <!-- Monogram & Medical Cross Group -->
+  <g filter="url(#monogramShadow)">
+    <!-- Playfair Display Italic 700 'L' Vector Path -->
+    <g transform="translate(115, 385) scale(1.22)">
+      <path d="M172.80-67.20L179.84-67.20Q177.92-62.08 176-55.36Q174.08-48.64 172.16-40.96Q170.56-34.88 168-23.52Q165.44-12.16 163.52 0Q147.20-0.64 127.04-0.80Q106.88-0.96 90.88-0.96Q82.88-0.96 70.56-0.96Q58.24-0.96 43.52-0.80Q28.80-0.64 14.08-0.48Q-0.64-0.32-13.76 0L-12.16-6.40Q-1.28-7.04 4.80-8.96Q10.88-10.88 14.24-16.64Q17.60-22.40 20.80-33.92L63.04-192.64Q66.24-204.48 65.60-210.08Q64.96-215.68 60-217.76Q55.04-219.84 44.16-220.16L45.76-226.56Q54.08-226.24 68.32-225.92Q82.56-225.60 98.56-225.60Q112.64-225.60 125.76-225.92Q138.88-226.24 148.48-226.56L146.88-220.16Q136-219.84 129.92-217.76Q123.84-215.68 120.32-210.08Q116.80-204.48 113.60-192.64L71.36-33.92Q68.48-22.40 68.80-16.64Q69.12-10.88 74.08-9.12Q79.04-7.36 89.92-7.36L102.72-7.36Q117.12-7.36 129.76-13.12Q142.40-18.88 153.28-32Q164.16-45.12 172.80-67.20" fill="url(#goldGrad)"/>
+    </g>
+
+    <!-- Clinical Healthcare Cross (+) -->
+    <circle cx="362" cy="150" r="53.199999999999996" fill="url(#crossGlow)"/>
+    <rect x="354.0" y="122.0" width="16" height="56" rx="8.0" fill="url(#crossGrad)"/>
+    <rect x="334.0" y="142.0" width="56" height="16" rx="8.0" fill="url(#crossGrad)"/>
+    <!-- Diamond Glow Spark at Center of Medical Cross -->
+    <circle cx="362" cy="150" r="4.48" fill="#FFFFFF"/>
+  </g>
+</svg>

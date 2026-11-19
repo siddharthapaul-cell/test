@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed — LycheMD</title>
+    <meta name="description"
+        content="Thank you for your purchase. We've received your order and it's now being processed.">
+    <meta name="theme-color" content="#ebf5ff">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="Assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts: Plus Jakarta Sans, DM Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="Assets/css/style.css?v=3.0">
+</head>
+
+<body class="order-confirmation-body">
+
+    <!-- Simple Brand Header -->
+    <header class="order-header" aria-label="LycheMD Header">
+        <div class="container text-center">
+            <a href="index.html" class="order-brand" aria-label="LycheMD Home">
+                <span class="order-brand-title">LycheMD</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Order Confirmation Content -->
+    <main class="order-page-main" id="mainContent">
+        <div class="container order-page-container">
+
+            <!-- Card 1: Order Status Details -->
+            <section class="order-card order-confirmed-card" aria-label="Order Status Details">
+                <!-- Top Warning Alert Banner -->
+                <div class="order-alert-banner" role="alert">
+                    <div class="order-alert-icon-wrap" id="orderAlertIcon" title="Action Required">
+                        <img src="Assets/images/warning.png" alt="Warning Icon" class="order-alert-icon">
+                    </div>
+                    <div class="order-alert-text">
+                        <h1 class="order-alert-title">Your Order Is <span class="order-title-highlight">Not
+                                Complete!</span></h1>
+                        <p class="order-alert-desc">
+                            To complete your order, you must fill out the intake questionnaire and answer some health
+                            questions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Order Details Pill Box -->
+                <div class="order-details-box">
+                    <!-- Column 1: Product Thumbnail & Title -->
+                    <div class="order-detail-col order-product-col">
+                        <div class="order-product-wrap">
+                            <img src="Assets/images/semaglutide.png" alt="Semaglutide Injection Vial"
+                                class="order-product-thumb" width="32" height="60">
+                            <div class="order-product-info">
+                                <span class="order-product-name">Semaglutide Injection</span>
+                                <span class="order-product-sub">Compounded 2 ml Vial</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Metadata Group -->
+                    <div class="order-details-meta">
+                        <!-- Column 2: Order # -->
+                        <div class="order-detail-col order-meta-item">
+                            <span class="order-detail-label">Order #</span>
+                            <span class="order-detail-value">AUR-784599</span>
+                        </div>
+
+                        <!-- Column 3: Order Date -->
+                        <div class="order-detail-col order-meta-item">
+                            <span class="order-detail-label">Order Date</span>
+                            <span class="order-detail-value">Nov 13, 2026</span>
+                        </div>
+
+                        <!-- Column 4: Status -->
+                        <div class="order-detail-col order-meta-item">
+                            <span class="order-detail-label">Status</span>
+                            <div class="order-status-badge incomplete">
+                                <span class="order-status-dot incomplete" aria-hidden="true"></span>
+                                <span>Incomplete</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Card 2: Complete Your Intake Questionnaire -->
+            <section class="order-card order-intake-card" aria-label="Next Step: Intake Questionnaire">
+                <!-- Left Column: Todo Checklist Graphic -->
+                <div class="order-intake-img-wrap">
+                    <img src="Assets/images/todo.png" alt="Medical intake questionnaire checklist illustration"
+                        class="order-intake-img" width="180" height="174" loading="lazy">
+                </div>
+
+                <!-- Right Column: Content & CTA -->
+                <div class="order-intake-content">
+                    <span class="order-next-step-badge">NEXT STEP</span>
+                    <h2 class="order-intake-title">Complete Your Intake Questionnaire</h2>
+                    <p class="order-intake-desc">
+                        To ensure a safe and personalized treatment, please complete a short medical intake. It helps
+                        our
+                        clinical team review your health information and confirm your eligibility.
+                    </p>
+                    <a href="intake.html" class="btn btn-order-intake">
+                        Start Intake Questionnaire
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP 3 & Plugins -->
+    <script src="Assets/js/gsap.min.js"></script>
+    <script src="Assets/js/ScrollTrigger.min.js"></script>
+    <script src="Assets/js/ScrollToPlugin.min.js"></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="Assets/js/lenis.min.js"></script>
+
+    <!-- LycheMD Interactive Main Script -->
+    <script src="Assets/js/main.js"></script>
+
+    <!-- Alert Icon Pulse Interaction & Session Dynamic Order Population -->
+    <script>
+        const alertIcon = document.getElementById('orderAlertIcon');
+        if (alertIcon) {
+            alertIcon.addEventListener('click', () => {
+                alertIcon.style.animation = 'none';
+                void alertIcon.offsetWidth; // trigger reflow
+                alertIcon.style.animation = 'alertIconPulse 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+            });
+        }
+
+        try {
+            const stored = sessionStorage.getItem('lychemd_order');
+            if (stored) {
+                const data = JSON.parse(stored);
+                const nameEl = document.querySelector('.order-product-name');
+                const subEl = document.querySelector('.order-product-sub');
+                const valEls = document.querySelectorAll('.order-detail-value');
+                const thumbEl = document.querySelector('.order-product-thumb');
+
+                if (nameEl && data.treatmentName) nameEl.textContent = data.treatmentName;
+                if (subEl && data.plan) subEl.textContent = data.plan;
+                if (valEls[0] && data.orderId) valEls[0].textContent = data.orderId;
+                if (valEls[1] && data.date) valEls[1].textContent = data.date;
+
+                if (thumbEl) {
+                    if (data.img) {
+                        thumbEl.src = data.img;
+                    } else if (data.treatmentName && data.treatmentName.toLowerCase().includes('tirzepatide')) {
+                        thumbEl.src = 'Assets/images/tirzepatide.png';
+                    } else {
+                        thumbEl.src = 'Assets/images/semaglutide.png';
+                    }
+                }
+            }
+        } catch (e) {
+            console.warn('Could not read session order data', e);
+        }
+    </script>
+</body>
+
+</html>

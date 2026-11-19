@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LycheMD — Wellness Made Simple</title>
+    <meta name="description"
+        content="Experience tailored, discrete medical care. Clinical protocols for metabolic longevity, bioidentical hormones, and dermatological vitality.">
+    <meta name="theme-color" content="#090e13">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="Assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts: DM Sans, Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="Assets/css/style.css?v=2.9">
+</head>
+
+<body>
+
+    <!-- LycheMD Luxury Page Loader -->
+    <aside class="page-loader" id="pageLoader" aria-label="Loading LycheMD">
+        <!-- Ambient Radial Glow -->
+        <div class="loader-ambient-glow" aria-hidden="true"></div>
+
+        <!-- Center Brand Container -->
+        <div class="loader-content">
+            <!-- Emblem / Crest -->
+            <div class="loader-crest" aria-hidden="true">
+                <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23" cy="23" r="21" stroke="rgba(212, 175, 55, 0.28)" stroke-width="1"
+                        stroke-dasharray="2 3" />
+                    <circle cx="23" cy="23" r="16" stroke="rgba(212, 175, 55, 0.58)" stroke-width="1.2" />
+                    <circle cx="23" cy="23" r="10" stroke="rgba(212, 175, 55, 0.2)" stroke-width="1" />
+                    <circle cx="23" cy="23" r="2.8" fill="#e5c07b" />
+                </svg>
+            </div>
+
+            <!-- Brand Wordmark -->
+            <div class="loader-brand-wrap">
+                <span class="loader-brand">LycheMD</span>
+            </div>
+
+            <!-- Tagline -->
+            <div class="loader-tagline-wrap">
+                <span class="loader-tagline">Wellness Made Simple</span>
+            </div>
+
+            <!-- Precision Progress Indicator -->
+            <div class="loader-progress-wrap">
+                <div class="loader-progress-track">
+                    <div class="loader-progress-fill" id="loaderProgressFill"></div>
+                </div>
+                <div class="loader-status-row">
+                    <span class="loader-status-text">INITIALIZING</span>
+                    <span class="loader-counter" id="loaderCounter">0%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Golden Horizon Edge Line -->
+        <div class="loader-curtain-edge" aria-hidden="true"></div>
+    </aside>
+
+    <!-- Site Header / Navigation -->
+    <header class="site-header" id="siteHeader">
+        <div class="container">
+            <!-- Desktop Navigation Grid -->
+            <div class="header-inner d-none d-lg-grid">
+                <!-- Left Nav Links -->
+                <nav class="nav-group-left" aria-label="Main Navigation Left">
+                    <div class="nav-dropdown">
+                        <a href="#focus-areas" class="nav-link-custom" role="button" aria-expanded="false">
+                            Treatments
+                            <svg class="chevron-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu-lychemd" role="menu">
+                            <a href="category.html?category=weight-loss" class="dropdown-link-item" role="menuitem"
+                                data-focus="weight-loss">
+                                <span class="item-title">Weight Loss</span>
+                                <span class="item-desc">Take control of your weight</span>
+                            </a>
+                            <a href="category.html?category=skin-hair" class="dropdown-link-item" role="menuitem"
+                                data-focus="hair-skin">
+                                <span class="item-title">Hair &amp; Skin</span>
+                                <span class="item-desc">Radiant hair, healthy skin</span>
+                            </a>
+                            <a href="category.html?category=sexual-health" class="dropdown-link-item" role="menuitem"
+                                data-focus="sexual-health">
+                                <span class="item-title">Sexual Health</span>
+                                <span class="item-desc">Reclaim your intimate moments</span>
+                            </a>
+                            <a href="category.html?category=hormone-health" class="dropdown-link-item" role="menuitem"
+                                data-focus="menopause">
+                                <span class="item-title">Menopause</span>
+                                <span class="item-desc">Tackle your hormone changes</span>
+                            </a>
+                            <a href="category.html?category=longevity" class="dropdown-link-item" role="menuitem"
+                                data-focus="sleep">
+                                <span class="item-title">Sleep</span>
+                                <span class="item-desc">Get deeper, restful sleep</span>
+                            </a>
+                            <a href="category.html?category=longevity" class="dropdown-link-item" role="menuitem"
+                                data-focus="longevity">
+                                <span class="item-title">Longevity</span>
+                                <span class="item-desc">Optimize your cellular vitality</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#wellnessStepsSection" class="nav-link-custom">How It Works</a>
+                    <a href="#expertCareSection" class="nav-link-custom">Expert Care</a>
+                </nav>
+
+                <!-- Center Brand Logo -->
+                <div class="nav-brand-center">
+                    <a href="#hero" class="brand-title" aria-label="LycheMD Homepage">LycheMD</a>
+                </div>
+
+                <!-- Right Nav Links -->
+                <nav class="nav-group-right" aria-label="Main Navigation Right">
+                    <a href="#careOptionsSection" class="nav-link-custom">Care Options</a>
+                    <a href="#faqSection" class="nav-link-custom">FAQs</a>
+                    <a href="#testimonialsSection" class="nav-link-custom">Reviews</a>
+                    <a href="login.html" class="nav-link-custom" id="loginNavLink">Login</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Navigation Bar -->
+            <div class="header-mobile-bar d-flex d-lg-none">
+                <a href="#" class="brand-title" aria-label="LycheMD Homepage">LycheMD</a>
+                <button class="mobile-toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu" aria-label="Toggle navigation menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end offcanvas-lychemd" tabindex="-1" id="mobileMenu"
+        aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title brand-title" id="mobileMenuLabel">LycheMD</h5>
+            <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close menu"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-nav-list">
+                <li><a href="#focus-areas" class="mobile-nav-item" data-bs-dismiss="offcanvas">Treatments
+                        <span>→</span></a></li>
+                <li><a href="#wellnessStepsSection" class="mobile-nav-item" data-bs-dismiss="offcanvas">How It Works
+                        <span>→</span></a></li>
+                <li><a href="#expertCareSection" class="mobile-nav-item" data-bs-dismiss="offcanvas">Expert Care
+                        <span>→</span></a></li>
+                <li><a href="#careOptionsSection" class="mobile-nav-item" data-bs-dismiss="offcanvas">Care Options
+                        <span>→</span></a></li>
+                <li><a href="#faqSection" class="mobile-nav-item" data-bs-dismiss="offcanvas">FAQs <span>→</span></a>
+                </li>
+                <li><a href="#testimonialsSection" class="mobile-nav-item" data-bs-dismiss="offcanvas">Reviews
+                        <span>→</span></a></li>
+                <li><a href="login.html" class="mobile-nav-item">Login <span>→</span></a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="#" class="btn-hero-cta w-100 justify-content-center" data-bs-dismiss="offcanvas">
+                    <span>Get Started</span>
+                    <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <!-- Background Video -->
+            <div class="hero-video-wrapper">
+                <video class="hero-video" autoplay muted loop playsinline preload="auto"
+                    poster="Assets/images/hero-poster.jpg">
+                    <source src="Assets/videos/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="hero-video-overlay"></div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <!-- Left Hero Content Column -->
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 hero-content-wrapper">
+                        <h1 class="hero-title">
+                            <span class="hero-title-sans">Wellness</span>
+                            <span class="hero-title-serif">Made Simple</span>
+                        </h1>
+                        <p class="hero-description">
+                            Experience tailored, discrete medical care. Clinical protocols for metabolic longevity,
+                            bioidentical hormones, and dermatological vitality.
+                        </p>
+                        <div>
+                            <a href="category.html" class="btn-hero-cta">
+                                <span>Explore Treatments</span>
+                                <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What would you like help with? (Focus Areas Slider Section) -->
+        <section class="focus-areas-section" id="focus-areas" aria-label="Treatment Focus Areas">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <h2 class="focus-title">
+                            What <span class="title-serif">would you</span> like help with?
+                        </h2>
+                        <p class="focus-subtitle">
+                            Choose a focus area to explore personalized treatment options designed around your goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto-scrolling Carousel (aligned with container left edge, extends to right edge of viewport) -->
+            <div class="focus-slider-outer">
+                <div class="focus-slider-wrapper" id="focusSliderWrapper" role="region"
+                    aria-label="Focus areas carousel" tabindex="0">
+                    <div class="focus-slider-track" id="focusSliderTrack">
+                        <!-- Initial spacer so slider starts under the container at the beginning -->
+                        <div class="focus-slider-spacer" id="focusSliderSpacer" aria-hidden="true"></div>
+
+                        <!-- Card 1: Weight Loss -->
+                        <div class="focus-card" data-category="weight-loss">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/weightloss.png" alt="Weight loss" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Weight loss</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Take control<br>of your weight</h3>
+                                    <a href="category.html?category=weight-loss" class="focus-card-btn"
+                                        aria-label="Explore Weight Loss treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Hair & Skin -->
+                        <div class="focus-card" data-category="skin-hair">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/hairloss.png" alt="Hair & Skin" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Hair &amp; Skin</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Radiant hair,<br>healthy skin</h3>
+                                    <a href="category.html?category=skin-hair" class="focus-card-btn"
+                                        aria-label="Explore Hair & Skin treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Sexual Health -->
+                        <div class="focus-card" data-category="sexual-health">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/sexualhealth.png" alt="Sexual Health" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Sexual Health</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Reclaim your<br>intimate moments</h3>
+                                    <a href="category.html?category=sexual-health" class="focus-card-btn"
+                                        aria-label="Explore Sexual Health treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Menopause -->
+                        <div class="focus-card" data-category="hormone-health">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/menopause-category.png" alt="Menopause" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Menopause</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Tackle your<br>hormone changes</h3>
+                                    <a href="category.html?category=hormone-health" class="focus-card-btn"
+                                        aria-label="Explore Menopause treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Sleep -->
+                        <div class="focus-card" data-category="longevity">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/sleepissue.png" alt="Sleep" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Sleep</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Get deeper,<br>restful sleep</h3>
+                                    <a href="category.html?category=longevity" class="focus-card-btn"
+                                        aria-label="Explore Sleep treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Longevity -->
+                        <div class="focus-card" data-category="longevity">
+                            <div class="focus-card-inner">
+                                <img src="Assets/images/longevity.png" alt="Longevity" class="focus-card-img"
+                                    loading="lazy">
+                                <div class="focus-card-overlay"></div>
+                                <span class="focus-card-badge">Longevity</span>
+                                <div class="focus-card-footer">
+                                    <h3 class="focus-card-title">Optimize your<br>cellular vitality</h3>
+                                    <a href="category.html?category=longevity" class="focus-card-btn"
+                                        aria-label="Explore Longevity treatments">
+                                        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                            <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor"
+                                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Controls (Previous and Next Chevron Arrows) -->
+            <div class="focus-slider-controls">
+                <button class="focus-nav-btn prev-btn" id="focusPrevBtn" type="button" aria-label="Previous cards">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M8.5 1.5L1.5 9L8.5 16.5" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="focus-nav-btn next-btn" id="focusNextBtn" type="button" aria-label="Next cards">
+                    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M1.5 1.5L8.5 9L1.5 16.5" stroke="currentColor" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Brand Marquee Section (Press & Features) -->
+        <section class="brand-marquee-section" aria-label="Featured Publications and Press">
+            <div class="brand-marquee-track">
+                <!-- Group 1 -->
+                <div class="brand-marquee-group">
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-4.png" alt="Forbes" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-5.png" alt="Fortune" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item brand-item-nyt">
+                        <img src="Assets/images/brand-1.png" alt="The New York Times" class="brand-logo brand-logo-nyt"
+                            loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-2.png" alt="Healthline" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-3.png" alt="Fast Company" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <!-- Group 2 (Clone for infinite seamless loop) -->
+                <div class="brand-marquee-group" aria-hidden="true">
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-4.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-5.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item brand-item-nyt">
+                        <img src="Assets/images/brand-1.png" alt="" class="brand-logo brand-logo-nyt" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-2.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-3.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <!-- Group 3 (Ensures ultra-wide 4K coverage with zero gap) -->
+                <div class="brand-marquee-group" aria-hidden="true">
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-4.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-5.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item brand-item-nyt">
+                        <img src="Assets/images/brand-1.png" alt="" class="brand-logo brand-logo-nyt" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-2.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-3.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <!-- Group 4 -->
+                <div class="brand-marquee-group" aria-hidden="true">
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-4.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-5.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item brand-item-nyt">
+                        <img src="Assets/images/brand-1.png" alt="" class="brand-logo brand-logo-nyt" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-2.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                    <div class="brand-item">
+                        <img src="Assets/images/brand-3.png" alt="" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Care Section (Virtual Healthcare Showcase) -->
+        <section class="expert-care-section" id="expertCareSection" aria-label="Personalized Virtual Healthcare">
+            <div class="container">
+                <div class="row align-items-center gy-5 gy-lg-0">
+                    <!-- Left Column: Content -->
+                    <div class="col-12 col-lg-6 expert-care-content-col">
+                        <div class="expert-care-content">
+                            <!-- Category / Type Badge -->
+                            <div class="expert-care-badge-wrapper">
+                                <span class="expert-care-badge">Personalized Virtual Healthcare</span>
+                            </div>
+
+                            <!-- Main Heading -->
+                            <h2 class="expert-care-title">
+                                Expert care, <span class="title-serif">tailored to your</span><br
+                                    class="d-none d-sm-inline"> health and lifestyle
+                            </h2>
+
+                            <!-- Supporting Description -->
+                            <p class="expert-care-description">
+                                Connect with licensed healthcare providers from the comfort of home. Through convenient
+                                virtual consultations and personalized treatment plans, you can explore care options
+                                that
+                                align with your health needs, lifestyle, and goals.
+                            </p>
+
+                            <!-- Key Feature Checklist -->
+                            <ul class="expert-care-checklist" aria-label="Key healthcare benefits">
+                                <li class="expert-care-check-item">
+                                    <span class="expert-care-check-icon" aria-hidden="true">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 4.2L3.8 6.5L8.5 1.5" stroke="#ffffff" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="expert-care-check-text">Convenient Online Consultations</span>
+                                </li>
+                                <li class="expert-care-check-item">
+                                    <span class="expert-care-check-icon" aria-hidden="true">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 4.2L3.8 6.5L8.5 1.5" stroke="#ffffff" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="expert-care-check-text">Personalized Treatment Plans</span>
+                                </li>
+                                <li class="expert-care-check-item">
+                                    <span class="expert-care-check-icon" aria-hidden="true">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 4.2L3.8 6.5L8.5 1.5" stroke="#ffffff" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="expert-care-check-text">Satisfaction 100% Guaranteed</span>
+                                </li>
+                                <li class="expert-care-check-item">
+                                    <span class="expert-care-check-icon" aria-hidden="true">
+                                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.5 4.2L3.8 6.5L8.5 1.5" stroke="#ffffff" stroke-width="1.8"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="expert-care-check-text">Private And Secure Healthcare Access</span>
+                                </li>
+                            </ul>
+
+                            <!-- Call to Action Button -->
+                            <div>
+                                <a href="category.html" class="btn-hero-cta">
+                                    <span>Explore Treatments</span>
+                                    <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Media / Video -->
+                    <div class="col-12 col-lg-6 expert-care-media-col">
+                        <div class="expert-care-media-wrapper">
+                            <video class="expert-care-video" autoplay muted loop playsinline preload="auto"
+                                poster="Assets/images/wellness-capsule-poster.jpg"
+                                aria-label="Woman showcasing wellness capsule">
+                                <source src="Assets/videos/Woman_showcasing_wellness_capsule.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wellness Steps Section (Simple steps to better wellness) -->
+        <section class="wellness-steps-section" id="wellnessStepsSection" aria-label="Simple steps to better wellness">
+            <div class="container">
+                <!-- Section Header (Centered) -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="steps-badge-wrapper">
+                            <span class="steps-badge">Steps</span>
+                        </div>
+                        <h2 class="steps-title">
+                            Simple steps to <span class="title-serif">better</span> wellness
+                        </h2>
+                        <p class="steps-subtitle">
+                            Our simple, online process connects you with licensed healthcare providers who review
+                            your health information and help determine the right care options for your needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4 Steps Row -->
+                <div class="row steps-row justify-content-center">
+                    <!-- Step 1 -->
+                    <div class="col-12 col-md-6 col-lg-3 step-col">
+                        <div class="step-card">
+                            <div class="step-icon-wrapper">
+                                <img src="Assets/images/step-1.gif" alt="" class="step-icon" aria-hidden="true">
+                            </div>
+                            <h3 class="step-title">1. Choose your product</h3>
+                            <p class="step-desc">
+                                Browse available treatments and find options that align with your health goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-12 col-md-6 col-lg-3 step-col">
+                        <div class="step-card">
+                            <div class="step-icon-wrapper">
+                                <img src="Assets/images/step-2.gif" alt="" class="step-icon" aria-hidden="true">
+                            </div>
+                            <h3 class="step-title">2. Authorize payment</h3>
+                            <p class="step-desc">
+                                Provide details and authorize payment according to the treatment process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-12 col-md-6 col-lg-3 step-col">
+                        <div class="step-card">
+                            <div class="step-icon-wrapper">
+                                <img src="Assets/images/step-3.gif" alt="" class="step-icon" aria-hidden="true">
+                            </div>
+                            <h3 class="step-title">3. Complete a medical survey</h3>
+                            <p class="step-desc">
+                                Answer a short health questionnaire and any follow-up questions if needed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-12 col-md-6 col-lg-3 step-col">
+                        <div class="step-card">
+                            <div class="step-icon-wrapper">
+                                <img src="Assets/images/step-4.gif" alt="" class="step-icon" aria-hidden="true">
+                            </div>
+                            <h3 class="step-title">4. Physician review</h3>
+                            <p class="step-desc">
+                                If approved, your prescription is dispensed by a licensed pharmacy and shipped.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weight Loss / GLP-1 Metabolism Showcase Banner Section -->
+        <section class="weight-loss-banner-section" id="weightLossBannerSection"
+            aria-label="Lose weight, curb cravings, boost metabolism">
+            <div class="container weight-loss-banner-container">
+                <div class="row align-items-end weight-loss-banner-row">
+                    <!-- Left Column: Athletic Model Image -->
+                    <div class="col-12 col-md-5 col-lg-5 weight-loss-model-col order-2 order-md-1">
+                        <div class="weight-loss-model-wrapper">
+                            <img src="Assets/images/lose-weight-model.png"
+                                alt="Athletic smiling woman representing healthy weight loss and wellness"
+                                class="weight-loss-model-img">
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Heading, Subtitle & CTA -->
+                    <div class="col-12 col-md-7 col-lg-7 weight-loss-content-col order-1 order-md-2">
+                        <div class="weight-loss-content">
+                            <h2 class="weight-loss-title">
+                                <span class="title-serif">Lose weight.</span> Curb cravings.<br>
+                                Boost metabolism.
+                            </h2>
+                            <p class="weight-loss-subtitle">
+                                GLP-1 and GIP weight loss guided by science,<br class="d-none d-sm-inline"> grounded in
+                                care.
+                            </p>
+                            <div>
+                                <a href="checkout.html" class="btn-hero-cta">
+                                    <span>See If You Qualify</span>
+                                    <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Popular Treatments Slider Section -->
+        <section class="popular-treatments-section" id="popularTreatmentsSection" aria-label="Most Popular Treatments">
+            <div class="container">
+                <div class="row align-items-start justify-content-between mb-4 mb-lg-5">
+                    <div class="col-12 col-md-9 col-lg-8">
+                        <div class="popular-badge-wrapper mb-3">
+                            <span class="popular-treatments-badge">Products</span>
+                        </div>
+                        <h2 class="popular-treatments-title">
+                            Explore our <span class="title-serif">most popular</span> treatments
+                        </h2>
+                        <p class="popular-treatments-subtitle">
+                            Explore treatments for weight management, hormone health, hair care, sleep, and longevity,
+                            guided by licensed healthcare providers.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4 d-flex justify-content-md-end align-items-center mt-3 mt-md-0">
+                        <div class="popular-slider-controls">
+                            <button class="popular-nav-btn prev-btn" id="popularPrevBtn" type="button"
+                                aria-label="Previous treatments">
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M8.5 1.5L1.5 9L8.5 16.5" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="popular-nav-btn next-btn" id="popularNextBtn" type="button"
+                                aria-label="Next treatments">
+                                <svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M1.5 1.5L8.5 9L1.5 16.5" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Auto-scrolling Carousel (aligned with container left edge, extends to right edge of viewport) -->
+            <div class="popular-slider-outer">
+                <div class="popular-slider-wrapper" id="popularSliderWrapper" role="region"
+                    aria-label="Popular treatments carousel" tabindex="0">
+                    <div class="popular-slider-track" id="popularSliderTrack">
+                        <!-- Initial spacer so slider starts under the container at the beginning -->
+                        <div class="popular-slider-spacer" id="popularSliderSpacer" aria-hidden="true"></div>
+
+                        <!-- Card 1: Semaglutide Injection -->
+                        <a href="semaglutide.html">
+                            <div class="popular-card" data-product="semaglutide-injection">
+                                <div class="popular-card-inner">
+                                    <span class="popular-card-badge">GLP-1 Treatment</span>
+                                    <div class="popular-card-img-wrapper">
+                                        <img src="Assets/images/semaglutide.png" alt="Semaglutide Injection"
+                                            class="popular-card-img" loading="lazy">
+                                    </div>
+                                    <div class="popular-card-footer">
+                                        <h3 class="popular-card-title">Semaglutide Injection</h3>
+                                        <p class="popular-card-price">From $149/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Card 2: Semaglutide Capsule -->
+                        <a href="semaglutide.html">
+                            <div class="popular-card" data-product="semaglutide-capsule">
+                                <div class="popular-card-inner">
+                                    <span class="popular-card-badge">GLP-1 Treatment</span>
+                                    <div class="popular-card-img-wrapper">
+                                        <img src="Assets/images/semaglutide-oral.png" alt="Semaglutide Capsule"
+                                            class="popular-card-img" loading="lazy">
+                                    </div>
+                                    <div class="popular-card-footer">
+                                        <h3 class="popular-card-title">Semaglutide Capsule</h3>
+                                        <p class="popular-card-price">From $149/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Card 3: Tirzepatide Injection -->
+                        <div class="popular-card" data-product="tirzepatide-injection">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">GLP-1 + GIP Treatment</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/tirzepatide.png" alt="Tirzepatide Injection"
+                                        class="popular-card-img" loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">Tirzepatide Injection</h3>
+                                    <p class="popular-card-price">From $149/mo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Tirzepatide Capsule -->
+                        <div class="popular-card" data-product="tirzepatide-capsule">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">GLP-1 + GIP Treatment</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/tirzepatide-oral.png" alt="Tirzepatide Capsule"
+                                        class="popular-card-img" loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">Tirzepatide Capsule</h3>
+                                    <p class="popular-card-price">From $149/mo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: NAD+ Injection -->
+                        <div class="popular-card" data-product="nad-plus">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">Longevity</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/nad+.png" alt="NAD+ Injection" class="popular-card-img"
+                                        loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">NAD+ Injection</h3>
+                                    <p class="popular-card-price">From $199/mo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Finasteride Topical -->
+                        <div class="popular-card" data-product="finasteride">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">Hair &amp; Skin</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/finasteride.png" alt="Finasteride Topical"
+                                        class="popular-card-img" loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">Finasteride Treatment</h3>
+                                    <p class="popular-card-price">From $49/mo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Sildenafil Treatment -->
+                        <div class="popular-card" data-product="sildenafil">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">Sexual Health</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/sidenafil.png" alt="Sildenafil Treatment"
+                                        class="popular-card-img" loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">Sildenafil Treatment</h3>
+                                    <p class="popular-card-price">From $49/mo</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 8: Menopause Support -->
+                        <div class="popular-card" data-product="menopause">
+                            <div class="popular-card-inner">
+                                <span class="popular-card-badge">Hormone Health</span>
+                                <div class="popular-card-img-wrapper">
+                                    <img src="Assets/images/menopause.png" alt="Menopause Support"
+                                        class="popular-card-img" loading="lazy">
+                                </div>
+                                <div class="popular-card-footer">
+                                    <h3 class="popular-card-title">Menopause Support</h3>
+                                    <p class="popular-card-price">From $89/mo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Care Options Section ("Care that fits your life, your way") -->
+        <section class="care-options-section" id="careOptionsSection" aria-label="Care that fits your life, your way">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <h2 class="care-options-title">
+                            Care that fits <span class="title-serif">your life,</span> your way
+                        </h2>
+                        <p class="care-options-subtitle">
+                            From one-time virtual consultations to ongoing personalized care, explore flexible
+                            healthcare options designed to support your unique health and wellness goals.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2 Side-by-Side Care Option Cards -->
+                <div class="row care-cards-row g-4 justify-content-center">
+                    <!-- Card 1: Flexible Care -->
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="care-card">
+                            <span class="care-card-eyebrow">FLEXIBLE CARE</span>
+                            <h3 class="care-card-title">
+                                Personalized healthcare, on your terms
+                            </h3>
+                            <div class="care-card-media">
+                                <img src="Assets/images/flexible-care.png"
+                                    alt="Personalized healthcare consultation with provider" class="care-card-img"
+                                    loading="lazy">
+                            </div>
+                            <p class="care-card-desc">
+                                Connect with licensed healthcare providers and explore personalized treatment options
+                                designed
+                                around your health goals, lifestyle, and individual needs.
+                            </p>
+                            <div class="care-card-action">
+                                <a href="checkout.html" class="btn btn-care-action">Book a virtual visit</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Ongoing Care -->
+                    <div class="col-12 col-md-6 d-flex">
+                        <div class="care-card">
+                            <span class="care-card-eyebrow">ONGOING CARE</span>
+                            <h3 class="care-card-title">
+                                Continuous support for your health and wellness
+                            </h3>
+                            <div class="care-card-media">
+                                <img src="Assets/images/ongoing-care.png"
+                                    alt="Continuous support, personalized plans, and follow-up care"
+                                    class="care-card-img" loading="lazy">
+                            </div>
+                            <p class="care-card-desc">
+                                Get ongoing access to personalized treatment plans, provider guidance, prescription
+                                management, and follow-up care to support your wellness journey.
+                            </p>
+                            <div class="care-card-action">
+                                <a href="checkout.html" class="btn btn-care-action">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section ("Customers are saying") -->
+        <section class="testimonials-section" id="testimonialsSection" aria-label="Customer Testimonials">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <div class="testimonials-badge-wrapper">
+                            <span class="testimonials-badge">Testimonials</span>
+                        </div>
+                        <h2 class="testimonials-title">
+                            Customers are saying
+                        </h2>
+                        <p class="testimonials-subtitle">
+                            Customers love our products and we always strive to please them all.
+                        </p>
+                        <div class="testimonials-trustpilot-row">
+                            <span class="trustpilot-rating-text">Rated <strong>4.4 / 5</strong> based on <strong>1,063
+                                    reviews</strong> on</span>
+                            <span class="trustpilot-brand">
+                                <svg class="trustpilot-star" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 0l3.708 7.514 8.292 1.205-6 5.849 1.416 8.258L12 18.924 4.584 22.826 6 14.568 0 8.719l8.292-1.205L12 0z"
+                                        fill="#00B67A" />
+                                    <path d="M15.708 7.514L12 0v18.924l7.416 3.902-1.416-8.258 6-5.849-8.292-1.205z"
+                                        fill="#005128" />
+                                </svg>
+                                <span>Trustpilot</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full-bleed Infinite Testimonials Sliders (Edge of the screen) -->
+            <div class="testimonials-sliders-container">
+                <!-- Row 1: Left to Right Infinite Scrolling -->
+                <div class="testimonials-slider-row testimonials-ltr" id="testimonialsRow1" role="region"
+                    aria-label="Customer reviews row 1">
+                    <div class="testimonials-slider-track testimonials-track-ltr">
+                        <!-- Group 1 -->
+                        <div class="testimonials-group">
+                            <!-- Card 1-1: Amy Carter -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-nurse.png" alt="Amy Carter"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Amy Carter</h3>
+                                        <p class="testimonial-role">Registered Nurse</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        As a healthcare professional, I understand the importance of supporting the body
+                                        at a cellular level. After incorporating NAD+ into my daily wellness routine, I
+                                        noticed a meaningful improvement in my focus, mental clarity, and overall sense
+                                        of well-being.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-2: Jessica Miller -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-jessica.png" alt="Jessica Miller"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Jessica Miller</h3>
+                                        <p class="testimonial-role">Marketing Manager</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Working in a fast-paced environment requires constant creativity, focus, and
+                                        productivity. Before starting NAD+ therapy, I often experienced afternoon energy
+                                        crashes and mental fatigue. Within a few weeks, I began feeling more alert.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-3: Ashley Johnson -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-ashley.png" alt="Ashley Johnson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Ashley Johnson</h3>
+                                        <p class="testimonial-role">Fitness Trainer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Recovery is just as important as training, and NAD+ has become an essential part
+                                        of my wellness strategy. I feel more energized during workouts, recover more
+                                        efficiently afterward, and maintain better stamina throughout the week.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-4: David Miller -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-david.png" alt="David Miller"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">David Miller</h3>
+                                        <p class="testimonial-role">Financial Analyst</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Long days in financial modeling require sustained cognitive stamina. Adding
+                                        LycheMD's protocol to my routine gave me clear focus without afternoon slumps or
+                                        jitters. It's now indispensable.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group 2 (Duplicate for Seamless Infinite Loop) -->
+                        <div class="testimonials-group" aria-hidden="true">
+                            <!-- Card 1-1 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-nurse.png" alt="Amy Carter"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Amy Carter</h3>
+                                        <p class="testimonial-role">Registered Nurse</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        As a healthcare professional, I understand the importance of supporting the body
+                                        at a cellular level. After incorporating NAD+ into my daily wellness routine, I
+                                        noticed a meaningful improvement in my focus, mental clarity, and overall sense
+                                        of well-being.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-2 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-jessica.png" alt="Jessica Miller"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Jessica Miller</h3>
+                                        <p class="testimonial-role">Marketing Manager</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Working in a fast-paced environment requires constant creativity, focus, and
+                                        productivity. Before starting NAD+ therapy, I often experienced afternoon energy
+                                        crashes and mental fatigue. Within a few weeks, I began feeling more alert.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-3 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-ashley.png" alt="Ashley Johnson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Ashley Johnson</h3>
+                                        <p class="testimonial-role">Fitness Trainer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Recovery is just as important as training, and NAD+ has become an essential part
+                                        of my wellness strategy. I feel more energized during workouts, recover more
+                                        efficiently afterward, and maintain better stamina throughout the week.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 1-4 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-david.png" alt="David Miller"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">David Miller</h3>
+                                        <p class="testimonial-role">Financial Analyst</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Long days in financial modeling require sustained cognitive stamina. Adding
+                                        LycheMD's protocol to my routine gave me clear focus without afternoon slumps or
+                                        jitters. It's now indispensable.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.8</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Right to Left Infinite Scrolling -->
+                <div class="testimonials-slider-row testimonials-rtl" id="testimonialsRow2" role="region"
+                    aria-label="Customer reviews row 2">
+                    <div class="testimonials-slider-track testimonials-track-rtl">
+                        <!-- Group 1 -->
+                        <div class="testimonials-group">
+                            <!-- Card 2-1: Karen Nelson -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-teacher.png" alt="Karen Nelson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Karen Nelson</h3>
+                                        <p class="testimonial-role">Elementary School Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Teaching requires enthusiasm, and energy from morning to evening. Before
+                                        therapy, I often felt exhausted by the end of the day. Since starting my
+                                        wellness routine, I noticed a big boost in my stamina, and overall energy
+                                        levels.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-2: Emily Johnson -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-emily.png" alt="Emily Johnson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Emily Johnson</h3>
+                                        <p class="testimonial-role">Head of Product, Designer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Creative work demands concentration and mental clarity, and NAD+ has helped me
+                                        maintain both. I feel sharper during brainstorming sessions, more productive
+                                        when managing complex projects, and less affected by mental fatigue.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-3: Brittany Wilson -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-brittany.png" alt="Brittany Wilson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Brittany Wilson</h3>
+                                        <p class="testimonial-role">Fashion Designer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Balancing client meetings, deadlines, and creative responsibilities can be
+                                        exhausting. NAD+ therapy has helped me maintain steady energy and stay focused
+                                        throughout even the busiest days. I've experienced improved productivity.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-4: Marcus Reed -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-marcus.png" alt="Marcus Reed"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Marcus Reed</h3>
+                                        <p class="testimonial-role">Lead Architect</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Working under tight project delivery deadlines requires steady stamina and deep
+                                        mental focus. Adding LycheMD's protocol to my routine has been seamless, and the
+                                        sustained energy has exceeded my expectations.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Group 2 (Duplicate for Seamless Infinite Loop) -->
+                        <div class="testimonials-group" aria-hidden="true">
+                            <!-- Card 2-1 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-teacher.png" alt="Karen Nelson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Karen Nelson</h3>
+                                        <p class="testimonial-role">Elementary School Teacher</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Teaching requires enthusiasm, and energy from morning to evening. Before
+                                        therapy, I often felt exhausted by the end of the day. Since starting my
+                                        wellness routine, I noticed a big boost in my stamina, and overall energy
+                                        levels.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-2 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-emily.png" alt="Emily Johnson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Emily Johnson</h3>
+                                        <p class="testimonial-role">Head of Product, Designer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Creative work demands concentration and mental clarity, and NAD+ has helped me
+                                        maintain both. I feel sharper during brainstorming sessions, more productive
+                                        when managing complex projects, and less affected by mental fatigue.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-3 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-brittany.png" alt="Brittany Wilson"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Brittany Wilson</h3>
+                                        <p class="testimonial-role">Fashion Designer</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Balancing client meetings, deadlines, and creative responsibilities can be
+                                        exhausting. NAD+ therapy has helped me maintain steady energy and stay focused
+                                        throughout even the busiest days. I've experienced improved productivity.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.7</span>
+                                </div>
+                            </div>
+
+                            <!-- Card 2-4 Clone -->
+                            <div class="testimonial-card">
+                                <div class="testimonial-card-header">
+                                    <img src="Assets/images/testimonial-marcus.png" alt="Marcus Reed"
+                                        class="testimonial-avatar" loading="lazy">
+                                    <div class="testimonial-user-info">
+                                        <h3 class="testimonial-name">Marcus Reed</h3>
+                                        <p class="testimonial-role">Lead Architect</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-quote-wrapper">
+                                    <svg class="testimonial-quote-icon" width="20" height="16" viewBox="0 0 20 16"
+                                        fill="currentColor" aria-hidden="true">
+                                        <path
+                                            d="M0 16V9.455C0 4.242 3.158 1.152 7.719 0L9 2.242C6.07 3.091 4.386 4.788 3.947 7.333H8V16H0zm11 0V9.455C11 4.242 14.158 1.152 18.719 0L20 2.242C17.07 3.091 15.386 4.788 14.947 7.333H19V16H11z" />
+                                    </svg>
+                                    <p class="testimonial-text">
+                                        Working under tight project delivery deadlines requires steady stamina and deep
+                                        mental focus. Adding LycheMD's protocol to my routine has been seamless, and the
+                                        sustained energy has exceeded my expectations.
+                                    </p>
+                                </div>
+                                <div class="testimonial-rating-row">
+                                    <div class="testimonial-stars">
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                        <svg class="star-icon" width="16" height="16" viewBox="0 0 20 20"
+                                            fill="#f59e0b">
+                                            <path
+                                                d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                                        </svg>
+                                    </div>
+                                    <span class="testimonial-rating-score">4.9</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 10. TRUST BAR SECTION                        -->
+        <!-- ============================================ -->
+        <section class="trust-bar-section" id="trustBarSection" aria-label="Key Trust Signals and Certifications">
+            <div class="container">
+                <div class="trust-bar-grid">
+                    <div class="trust-bar-item">
+                        <span class="trust-bar-icon-wrap" aria-hidden="true">
+                            <img src="Assets/images/star.svg" alt="" class="trust-bar-icon" width="21" height="20">
+                        </span>
+                        <span class="trust-bar-text">US-Certified Pharmacy</span>
+                    </div>
+
+                    <div class="trust-bar-item">
+                        <span class="trust-bar-icon-wrap" aria-hidden="true">
+                            <img src="Assets/images/personalized.svg" alt="" class="trust-bar-icon" width="21"
+                                height="24">
+                        </span>
+                        <span class="trust-bar-text">Personalized Treatments</span>
+                    </div>
+
+                    <div class="trust-bar-item">
+                        <span class="trust-bar-icon-wrap" aria-hidden="true">
+                            <img src="Assets/images/badge.svg" alt="" class="trust-bar-icon" width="28" height="28">
+                        </span>
+                        <span class="trust-bar-text">Trusted by 100k+ Americans</span>
+                    </div>
+
+                    <div class="trust-bar-item">
+                        <span class="trust-bar-icon-wrap" aria-hidden="true">
+                            <img src="Assets/images/doctor.svg" alt="" class="trust-bar-icon" width="23" height="24">
+                        </span>
+                        <span class="trust-bar-text">1:1 Medical Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- 11. FAQ SECTION                              -->
+        <!-- ============================================ -->
+        <section class="faq-section" id="faqSection" aria-label="Frequently Asked Questions">
+            <div class="container">
+                <div class="faq-layout">
+                    <!-- Left Column: Heading, Subtitle, CTA, Media Cards -->
+                    <div class="faq-left-col">
+                        <div class="faq-left-content">
+                            <div class="faq-badge-wrap">
+                                <span class="faq-badge">FAQ</span>
+                            </div>
+
+                            <h2 class="faq-title">
+                                Everything <span class="title-serif">you</span> need<br class="d-none d-sm-inline"> to
+                                know
+                            </h2>
+
+                            <p class="faq-subtitle">
+                                Still have questions? Our care team is available 7 days a week.
+                            </p>
+
+                            <div>
+                                <a href="#" class="btn-hero-cta">
+                                    <span>Contact care team</span>
+                                    <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="faq-media-grid">
+                            <div class="faq-media-card">
+                                <img src="Assets/images/faq-care-anywhere@2x.png"
+                                    alt="Telemedicine virtual care consultation" class="faq-media-img">
+                            </div>
+                            <div class="faq-media-card">
+                                <img src="Assets/images/faq-journey-box@2x.png"
+                                    alt="LycheMD personalized health journey treatment kit and prescription medicine"
+                                    class="faq-media-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Accordion -->
+                    <div class="faq-right-col">
+                        <div class="faq-accordion" id="faqAccordion">
+                            <!-- Question 1 (Active / Expanded by default) -->
+                            <div class="faq-item is-active">
+                                <button type="button" class="faq-trigger" aria-expanded="true" aria-controls="faq-ans-1"
+                                    id="faq-btn-1">
+                                    <span class="faq-question">Are LycheMD physicians licensed and
+                                        board-certified?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-1" role="region" aria-labelledby="faq-btn-1">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            Yes. Every physician on LycheMD's platform is fully licensed in the states
+                                            they practice, board-certified in their specialty, and individually
+                                            credentialed by our medical affairs team. We work exclusively with
+                                            experienced clinicians — no residents, no exceptions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="faq-item">
+                                <button type="button" class="faq-trigger" aria-expanded="false"
+                                    aria-controls="faq-ans-2" id="faq-btn-2">
+                                    <span class="faq-question">How is my personal and medical data protected?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-2" role="region" aria-labelledby="faq-btn-2">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            We prioritize patient confidentiality with 256-bit bank-level encryption and
+                                            full HIPAA compliance. Your health surveys, medical consultations, and order
+                                            history are securely stored and never shared with unauthorized third
+                                            parties.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="faq-item">
+                                <button type="button" class="faq-trigger" aria-expanded="false"
+                                    aria-controls="faq-ans-3" id="faq-btn-3">
+                                    <span class="faq-question">How and when will my treatment be delivered?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-3" role="region" aria-labelledby="faq-btn-3">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            Following clinical approval, your medication is prepared by our US-certified
+                                            partner pharmacy and shipped in temperature-monitored, discreet packaging
+                                            within 2 to 4 business days, complete with real-time tracking updates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="faq-item">
+                                <button type="button" class="faq-trigger" aria-expanded="false"
+                                    aria-controls="faq-ans-4" id="faq-btn-4">
+                                    <span class="faq-question">How do I know if I'm eligible for a treatment?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-4" role="region" aria-labelledby="faq-btn-4">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            You'll complete a brief online medical survey detailing your medical
+                                            history, symptoms, and wellness goals. A licensed provider evaluates your
+                                            submission to verify if the treatment is clinically safe and optimal for
+                                            your needs.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 5 -->
+                            <div class="faq-item">
+                                <button type="button" class="faq-trigger" aria-expanded="false"
+                                    aria-controls="faq-ans-5" id="faq-btn-5">
+                                    <span class="faq-question">Does insurance cover LycheMD treatments?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-5" role="region" aria-labelledby="faq-btn-5">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            LycheMD provides transparent, direct pricing without requiring insurance or
+                                            copays. While we do not process insurance claims, you can readily utilize
+                                            HSA (Health Savings Account) or FSA (Flexible Spending Account) funds for
+                                            all treatments and consultations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Question 6 -->
+                            <div class="faq-item">
+                                <button type="button" class="faq-trigger" aria-expanded="false"
+                                    aria-controls="faq-ans-6" id="faq-btn-6">
+                                    <span class="faq-question">Can I cancel or pause my treatment at any time?</span>
+                                    <span class="faq-icon-toggle" aria-hidden="true">
+                                        <svg class="icon-minus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                        <svg class="icon-plus" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="faq-collapse" id="faq-ans-6" role="region" aria-labelledby="faq-btn-6">
+                                    <div class="faq-answer-inner">
+                                        <div class="faq-divider"></div>
+                                        <p class="faq-answer-text">
+                                            Yes, you have complete flexibility. You can pause, modify dosage, or cancel
+                                            your plan at any time through your account portal or with help from our
+                                            support team with zero penalty fees.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==========================================================================
+         Site Footer Section (with Grass Video Background)
+         ========================================================================== -->
+    <footer class="site-footer" id="siteFooter" aria-label="Site Footer">
+        <!-- Background Video -->
+        <div class="footer-video-wrap" aria-hidden="true">
+            <video class="footer-video" autoplay muted loop playsinline preload="auto">
+                <source src="Assets/videos/grass_gwr_video_mvp.mp4" type="video/mp4">
+            </video>
+            <div class="footer-video-overlay"></div>
+        </div>
+
+        <div class="container footer-container">
+            <!-- 5-Column Grid: Brand + 4 Navigation Columns -->
+            <div class="footer-grid">
+                <!-- Column 1: Brand & Certification Badges -->
+                <div class="footer-col footer-brand-col">
+                    <a href="#" class="footer-logo" aria-label="LycheMD Homepage">LycheMD</a>
+                    <div class="footer-badges">
+                        <img src="Assets/images/fda.png" alt="FDA Approved" class="footer-badge-img" width="100"
+                            height="100" loading="lazy">
+                        <img src="Assets/images/hipaa.png" alt="HIPAA Compliant" class="footer-badge-img" width="100"
+                            height="100" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Column Group Left (Popular + Help) -->
+                <div class="footer-nav-col">
+                    <!-- Column 2: Popular -->
+                    <div class="footer-col footer-col-popular">
+                        <h3 class="footer-col-title">POPULAR</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#" class="footer-link">Injectable Tirzepatide</a></li>
+                            <li><a href="#" class="footer-link">Injectable Semaglutide</a></li>
+                            <li><a href="#" class="footer-link">Tirzepatide Tablets</a></li>
+                            <li><a href="#" class="footer-link">Semaglutide Tablets</a></li>
+                            <li><a href="#" class="footer-link">Sildenafil Troche</a></li>
+                            <li><a href="#" class="footer-link">Finasteride Hair Spray</a></li>
+                            <li><a href="#" class="footer-link">Menopause Complex</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Help -->
+                    <div class="footer-col footer-col-help">
+                        <h3 class="footer-col-title">HELP</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#expertCareSection" class="footer-link">Customer Support</a></li>
+                            <li><a href="#wellnessStepsSection" class="footer-link">How It Works</a></li>
+                            <li><a href="#faqSection" class="footer-link">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Column Group Right (Have a Question + Legal) -->
+                <div class="footer-nav-col">
+                    <!-- Column 3: Have a Question? -->
+                    <div class="footer-col footer-col-question">
+                        <h3 class="footer-col-title">HAVE A QUESTION?</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="login.html" class="footer-link">Member Login</a></li>
+                            <li><a href="mailto:support@telemedirx.com" class="footer-link">support@telemedirx.com</a>
+                            </li>
+                            <li><a href="#faqSection" class="footer-link">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 5: Legal -->
+                    <div class="footer-col footer-col-legal">
+                        <h3 class="footer-col-title">LEGAL</h3>
+                        <ul class="footer-nav-list">
+                            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                            <li><a href="#" class="footer-link">Returns &amp; Refund Policy</a></li>
+                            <li><a href="#" class="footer-link">Terms Of Use</a></li>
+                            <li><a href="#" class="footer-link">HIPAA Notice</a></li>
+                            <li><a href="#" class="footer-link">CCPA Opt-Out</a></li>
+                            <li><a href="#" class="footer-link">Partner Information</a></li>
+                            <li><a href="#" class="footer-link">Tele Health Consent</a></li>
+                            <li><a href="#" class="footer-link">Safety</a></li>
+                            <li><a href="#" class="footer-link">States Available</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer Paragraph -->
+            <div class="footer-disclaimer-wrap">
+                <p class="footer-disclaimer-text">
+                    <strong>Disclaimer:</strong> Results vary based on individual health, starting weight, and program
+                    adherence. Weight and inch loss are not guaranteed and require following clinician guidance, a
+                    reduced-calorie diet, and regular physical activity. Medications are prescribed at the discretion of
+                    licensed providers and may not be suitable for everyone. Always consult a healthcare professional
+                    before starting any weight-loss or longevity program. Clinical references are based on published
+                    studies of GLP-1 therapies combined with lifestyle changes. Pure One MD is not affiliated with, nor
+                    does it claim equivalence to, any FDA-approved branded medications. All trademarks belong to their
+                    respective owners.
+                </p>
+            </div>
+
+            <!-- Thin Divider Line with Diamond Accent -->
+            <div class="footer-divider-wrap">
+                <hr class="footer-divider" aria-hidden="true">
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2026 LycheMD | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-lychemd">
+                <div class="modal-header border-0 pb-0">
+                    <div class="modal-brand-wrap">
+                        <span class="brand-title">LycheMD</span>
+                        <span class="modal-subtitle">Member Portal Login</span>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-3">
+                    <form id="memberLoginForm"
+                        onsubmit="event.preventDefault(); alert('Connecting to secure LycheMD member portal...');">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label form-label-custom">Email Address</label>
+                            <input type="email" class="form-control form-control-custom" id="loginEmail"
+                                placeholder="name@example.com" required autocomplete="email">
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <label for="loginPassword" class="form-label form-label-custom mb-0">Password</label>
+                                <a href="#" class="form-link-muted"
+                                    onclick="alert('Password reset link has been dispatched to your email.'); return false;">Forgot
+                                    password?</a>
+                            </div>
+                            <input type="password" class="form-control form-control-custom" id="loginPassword"
+                                placeholder="Enter your password" required autocomplete="current-password">
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberMe" checked>
+                            <label class="form-check-label form-check-label-custom" for="rememberMe">
+                                Remember this device
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-hero-cta w-100 justify-content-center">
+                            <span>Sign In</span>
+                            <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                        </button>
+                    </form>
+                    <div
+                        class="modal-footer-custom text-center mt-4 pt-3 border-top border-secondary border-opacity-25">
+                        <span class="text-muted-custom">New to LycheMD?</span>
+                        <a href="#focus-areas" class="link-gold ms-1" data-bs-dismiss="modal">Explore our treatments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="Assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP 3 & Plugins -->
+    <script src="Assets/js/gsap.min.js"></script>
+    <script src="Assets/js/ScrollTrigger.min.js"></script>
+    <script src="Assets/js/ScrollToPlugin.min.js"></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="Assets/js/lenis.min.js"></script>
+
+    <!-- Custom Interactive Script -->
+    <script src="Assets/js/main.js"></script>
+</body>
+
+</html>

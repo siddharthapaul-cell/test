@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Medical Checkout — LycheMD</title>
+    <meta name="description"
+        content="Complete your prescription checkout for clinical compounded GLP-1 weight management protocols. Doctor consult and expedited shipping included.">
+    <meta name="theme-color" content="#ebf5ff">
+
+    <!-- Favicon & Brand Icons -->
+    <link rel="icon" type="image/svg+xml" href="Assets/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts: DM Sans, Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- LycheMD Main Stylesheet -->
+    <link rel="stylesheet" href="Assets/css/style.css?v=3.5">
+
+    <!-- Checkout Specialized Stylesheet -->
+    <link rel="stylesheet" href="Assets/css/checkout.css?v=1.0">
+</head>
+
+<body class="checkout-body">
+
+    <!-- ==========================================================================
+         CHECKOUT MINIMAL BRAND HEADER & APPROVAL EXPIRATION TIMER BAR
+         ========================================================================== -->
+    <header class="checkout-site-header" id="checkoutHeader" aria-label="Checkout Brand Header">
+        <!-- Top Logo Bar (Centered) -->
+        <div class="checkout-logo-bar">
+            <div class="container text-center">
+                <a href="index.html" class="checkout-header-logo" aria-label="LycheMD">
+                    <span class="checkout-brand-title">LycheMD</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Approval Expiration Countdown Bar -->
+        <div class="checkout-timer-bar-top" role="timer" aria-live="polite" aria-label="Approval Expiration Countdown">
+            <div class="checkout-timer-bar-inner">
+                <span class="timer-bar-label">Your Approval Expires In</span>
+                <div class="timer-boxes" aria-label="Approval Expiration Time">
+                    <span class="timer-box" id="topTimerBox1">12</span>
+                    <span class="timer-colon" aria-hidden="true">:</span>
+                    <span class="timer-box" id="topTimerBox2">37</span>
+                    <span class="timer-colon" aria-hidden="true">:</span>
+                    <span class="timer-box" id="topTimerBox3">20</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CHECKOUT CONTENT -->
+    <main class="checkout-main-section" id="checkoutMain">
+        <div class="container">
+            <div class="checkout-wrapper">
+
+                <!-- CARD 1: PLAN CONFIRMED HERO CARD -->
+                <section class="checkout-card checkout-hero-card" aria-label="Plan Confirmed Summary">
+                    <div class="checkout-hero-grid">
+                        <div class="checkout-hero-info">
+                            <!-- Rating -->
+                            <div class="checkout-rating-badge">
+                                <div class="checkout-stars" aria-label="5 out of 5 stars">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                </div>
+                                <span class="checkout-rating-text">4.9/5 Rating <span
+                                        class="checkout-rating-count">(2,400+ Verified Patients)</span></span>
+                            </div>
+
+                            <h1 class="checkout-card-title">
+                                Plan confirmed &amp; <em>ready to start</em>
+                            </h1>
+
+                            <p class="checkout-card-subtitle mb-0">
+                                Your personalized metabolic health protocol is unlocked. Finalize your shipment details
+                                below to connect with your designated physician.
+                            </p>
+
+                            <!-- Feature Badges -->
+                            <div class="checkout-pills-row">
+                                <span class="checkout-feature-pill">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Doctor Approved
+                                </span>
+                                <span class="checkout-feature-pill">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Free Express Shipping
+                                </span>
+                                <span class="checkout-feature-pill">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    Genuine Rx Medication
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Product Vials Artwork -->
+                        <div class="checkout-hero-visual">
+                            <img src="Assets/images/semaglutide-tirzepatide-vials-pair.png"
+                                alt="LycheMD Clinical Compounded Semaglutide and Tirzepatide Prescription Medication Vials"
+                                class="checkout-hero-img" width="210" height="190" fetchpriority="high">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CARD 2: WEIGHT LOSS JOURNEY CHART CARD -->
+                <section class="checkout-card checkout-journey-card" aria-label="Weight Loss Projection">
+                    <h2 class="checkout-card-title">
+                        Start Your <em>Weight Loss</em> Journey
+                    </h2>
+                    <p class="checkout-card-subtitle">
+                        Projected clinical trajectory based on real patient clinical outcomes over 16 weeks of
+                        compounded GLP-1 therapy.
+                    </p>
+
+                    <!-- Interactive SVG Chart Component -->
+                    <div class="checkout-chart-wrap" id="checkoutChartWrap" aria-label="Weight loss curve chart">
+                        <!-- Chart Header / Replay Action -->
+                        <button type="button" class="chart-replay-btn" id="chartReplayBtn"
+                            title="Replay trajectory animation" aria-label="Replay weight loss trajectory animation">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                                <polyline points="3 3 3 8 8 8"></polyline>
+                            </svg>
+                            <span>Replay</span>
+                        </button>
+
+                        <svg class="checkout-chart-svg" id="checkoutChartSvg" viewBox="0 0 540 220" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-label="Weight decrease from 215 lbs to 172 lbs over 4 months">
+                            <defs>
+                                <linearGradient id="weightAreaGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#4c6881" stop-opacity="0.22" />
+                                    <stop offset="70%" stop-color="#ebf5ff" stop-opacity="0.08" />
+                                    <stop offset="100%" stop-color="#ebf5ff" stop-opacity="0.00" />
+                                </linearGradient>
+                                <clipPath id="chartAreaClip">
+                                    <rect id="chartClipRect" x="0" y="0" width="540" height="220" />
+                                </clipPath>
+                            </defs>
+
+                            <!-- Subtle Horizontal Grid Lines -->
+                            <g class="chart-grid-group">
+                                <line x1="45" y1="40" x2="495" y2="40" class="chart-grid-line" />
+                                <text x="35" y="44" class="chart-axis-label" text-anchor="end">220 lbs</text>
+
+                                <line x1="45" y1="90" x2="495" y2="90" class="chart-grid-line" />
+                                <text x="35" y="94" class="chart-axis-label" text-anchor="end">200 lbs</text>
+
+                                <line x1="45" y1="140" x2="495" y2="140" class="chart-grid-line" />
+                                <text x="35" y="144" class="chart-axis-label" text-anchor="end">185 lbs</text>
+
+                                <line x1="45" y1="190" x2="495" y2="190" class="chart-grid-line" />
+                                <text x="35" y="194" class="chart-axis-label" text-anchor="end">170 lbs</text>
+                            </g>
+
+                            <!-- Gradient Area Under Curve (with clip-path sync) -->
+                            <path id="chartAreaPath"
+                                d="M 60 50 C 130 65, 170 100, 205 105 C 240 110, 310 135, 345 145 C 380 155, 430 178, 480 188 L 480 205 L 60 205 Z"
+                                fill="url(#weightAreaGrad)" clip-path="url(#chartAreaClip)" class="chart-area-path" />
+
+                            <!-- Main Weight Loss Bézier Curve -->
+                            <path id="chartWeightPath"
+                                d="M 60 50 C 130 65, 170 100, 205 105 C 240 110, 310 135, 345 145 C 380 155, 430 178, 480 188"
+                                stroke="#4c6881" stroke-width="3.5" stroke-linecap="round" class="chart-line-path" />
+
+                            <!-- Data Point 1 (Month 1 Start) -->
+                            <g class="chart-node chart-node-1" tabindex="0" role="button"
+                                aria-label="Month 1: 215 pounds starting weight">
+                                <circle cx="60" cy="50" r="5" class="chart-data-point" />
+                                <g class="chart-badge-wrap">
+                                    <rect x="30" y="14" width="60" height="22" class="chart-badge-bg" />
+                                    <text x="60" y="29" class="chart-badge-text">215 lbs</text>
+                                </g>
+                            </g>
+
+                            <!-- Data Point 2 (Month 2) -->
+                            <g class="chart-node chart-node-2" tabindex="0" role="button"
+                                aria-label="Month 2: 198 pounds">
+                                <circle cx="205" cy="105" r="5" class="chart-data-point" />
+                                <g class="chart-badge-wrap">
+                                    <rect x="175" y="70" width="60" height="22" class="chart-badge-bg" />
+                                    <text x="205" y="85" class="chart-badge-text">198 lbs</text>
+                                </g>
+                            </g>
+
+                            <!-- Data Point 3 (Month 3) -->
+                            <g class="chart-node chart-node-3" tabindex="0" role="button"
+                                aria-label="Month 3: 185 pounds">
+                                <circle cx="345" cy="145" r="5" class="chart-data-point" />
+                                <g class="chart-badge-wrap">
+                                    <rect x="315" y="110" width="60" height="22" class="chart-badge-bg" />
+                                    <text x="345" y="125" class="chart-badge-text">185 lbs</text>
+                                </g>
+                            </g>
+
+                            <!-- Data Point 4 (Month 4 Goal - Highlighted) -->
+                            <g class="chart-node chart-node-4" tabindex="0" role="button"
+                                aria-label="Month 4 Target: 172 pounds (-43 pounds lost)">
+                                <circle cx="480" cy="188" r="8" class="chart-point-pulse" />
+                                <circle cx="480" cy="188" r="6" class="chart-data-point chart-data-point-target" />
+                                <g class="chart-badge-wrap">
+                                    <rect x="420" y="146" width="105" height="26" class="chart-badge-bg-target" />
+                                    <text x="472.5" y="163" class="chart-badge-text">172 lbs (-43 lbs!)</text>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <!-- Timeline Labels -->
+                        <div class="checkout-chart-timeline" aria-hidden="true">
+                            <span class="timeline-step-item">Month 1</span>
+                            <span class="timeline-step-item">Month 2</span>
+                            <span class="timeline-step-item">Month 3</span>
+                            <span class="timeline-step-item fw-bold text-dark">Month 4 (Target)</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct Jump Button to Medication Selection -->
+                    <div class="checkout-journey-cta">
+                        <a href="#treatmentSection" class="btn-hero-cta w-100 justify-content-center">
+                            <span>Choose Your Medication</span>
+                            <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                        </a>
+                        <div class="checkout-trust-footnote">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            No hidden charges • Cancel anytime • 100% Doctor consult included
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CARD 3: DOCTOR FEE CALLOUT CARD -->
+                <section class="checkout-card checkout-doctor-fee-card" aria-label="Doctor Fee Comparison">
+                    <div class="checkout-fee-flex">
+                        <div class="checkout-fee-content">
+                            <h2 class="checkout-card-title">
+                                Don't pay an extra <em>doctor fee</em>
+                            </h2>
+                            <p class="checkout-fee-desc">
+                                Other online telemedicine platforms charge an upfront $99+ physician consult fee at
+                                checkout. With LycheMD, your medical intake review, ongoing 1-on-1 clinician messaging,
+                                and personalized dosage adjustments are <strong>100% included</strong> with your monthly
+                                treatment.
+                            </p>
+                        </div>
+                        <div class="checkout-fee-visual">
+                            <img src="Assets/images/semaglutide.png" alt="Prescription Semaglutide Vial"
+                                class="checkout-fee-img" width="110" height="110" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Promo Highlight Ribbon -->
+                    <div class="checkout-fee-banner">
+                        <span class="checkout-fee-banner-text">
+                            Start your journey today with all-inclusive medical care
+                        </span>
+                        <span class="checkout-fee-badge">
+                            Consultation fee included
+                        </span>
+                    </div>
+                </section>
+
+                <!-- CARD 4: WHAT'S INCLUDED CARD (Exact Layout matching reference with LycheMD Theme) -->
+                <section class="checkout-card checkout-included-card" aria-label="What is Included in Plan">
+                    <div class="checkout-included-header text-center">
+                        <h2 class="checkout-included-main-title">
+                            What's <em>Included</em>
+                        </h2>
+                    </div>
+
+                    <!-- 2x2 Visual Cards Grid -->
+                    <div class="checkout-included-2x2-grid">
+                        <!-- Col 1: Medication vials -->
+                        <div class="checkout-included-item">
+                            <div class="checkout-included-photo-wrap">
+                                <img src="Assets/images/include-1.png" alt="Medication vials"
+                                    class="checkout-included-photo" loading="lazy">
+                            </div>
+                            <h3 class="checkout-included-caption">
+                                Medication<br>vials
+                            </h3>
+                        </div>
+
+                        <!-- Col 2: Sterile syringes + alcohol swabs -->
+                        <div class="checkout-included-item">
+                            <div class="checkout-included-photo-wrap">
+                                <img src="Assets/images/include-2.png" alt="Sterile syringes + alcohol swabs"
+                                    class="checkout-included-photo" loading="lazy">
+                            </div>
+                            <h3 class="checkout-included-caption">
+                                Sterile syringes +<br>alcohol swabs
+                            </h3>
+                        </div>
+
+                        <!-- Col 3: 1 on 1 Doctor Consultations -->
+                        <div class="checkout-included-item">
+                            <div class="checkout-included-photo-wrap">
+                                <img src="Assets/images/include-3.png" alt="1 on 1 Doctor Consultations"
+                                    class="checkout-included-photo" loading="lazy">
+                            </div>
+                            <h3 class="checkout-included-caption">
+                                1 on 1 Doctor<br>Consultations
+                            </h3>
+                        </div>
+
+                        <!-- Col 4: Free Overnight shipping to Georgia -->
+                        <div class="checkout-included-item">
+                            <div class="checkout-included-photo-wrap">
+                                <img src="Assets/images/include-4.png" alt="Free Overnight shipping to Georgia"
+                                    class="checkout-included-photo" loading="lazy">
+                            </div>
+                            <h3 class="checkout-included-caption">
+                                Free shipping to <br><span class="checkout-state-target">orders over $150</span>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <!-- 5 Feature Checklist Points with Dividers -->
+                    <ul class="checkout-included-checklist" aria-label="Included Plan Features">
+                        <li class="checkout-checklist-row">
+                            <span class="checkout-badge-check" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="checkout-checklist-text">
+                                <strong>UNLIMITED</strong> support from board-certified clinicians
+                            </span>
+                        </li>
+                        <li class="checkout-checklist-row">
+                            <span class="checkout-badge-check" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="checkout-checklist-text">
+                                <strong>FREE</strong> lab work (if required)
+                            </span>
+                        </li>
+                        <li class="checkout-checklist-row">
+                            <span class="checkout-badge-check" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="checkout-checklist-text">
+                                Comprehensive biology assessment
+                            </span>
+                        </li>
+                        <li class="checkout-checklist-row">
+                            <span class="checkout-badge-check" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="checkout-checklist-text">
+                                No contracts, cancel <strong>ANYTIME</strong>
+                            </span>
+                        </li>
+                        <li class="checkout-checklist-row">
+                            <span class="checkout-badge-check" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="checkout-checklist-text">
+                                100% Membership Satisfaction Guarantee*
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- CARD 5: MEDICATION SELECTION & PLANS SECTION -->
+                <section class="checkout-card checkout-selection-card" id="treatmentSection"
+                    aria-label="Select Treatment and Plan">
+                    <div class="text-center mb-4">
+                        <h2 class="checkout-card-title">
+                            Choose Your Medication To<br> <em>Get Started </em>Today
+                        </h2>
+                        <p class="checkout-card-subtitle mb-0">
+                            Select your desired formulation and treatment protocol to lock in your clinical introductory
+                            rate.
+                        </p>
+                    </div>
+
+                    <!-- Clinical Probability / Success Rate Banner (Matching Reference with LycheMD Theme) -->
+                    <div class="checkout-success-banner" aria-label="Treatment Success Probability">
+                        <div class="checkout-success-header">
+                            <p class="checkout-success-text mb-0">
+                                You have a <span class="success-highlight"><em>VERY HIGH</em></span> chance of success
+                                with GLP-1 medication
+                            </p>
+                        </div>
+                        <div class="checkout-success-gauge-wrap">
+                            <!-- Floating 92% Pin Tooltip -->
+                            <div class="checkout-gauge-pin" style="left: 92%;" aria-hidden="true">
+                                <span class="gauge-pin-badge">92%</span>
+                                <span class="gauge-pin-arrow"></span>
+                            </div>
+                            <!-- Track and Fill -->
+                            <div class="checkout-gauge-track" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                                aria-valuemax="100" aria-label="92% chance of success with GLP-1 medication">
+                                <div class="checkout-gauge-fill" style="width: 92%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dose Formulation Toggle (Injectable vs Oral) -->
+                    <div class="checkout-dosage-tabs" role="tablist" aria-label="Formulation Selector">
+                        <button type="button" class="checkout-dosage-btn active" role="tab" aria-selected="true"
+                            data-dosage="injection">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.3">
+                                <path d="m18 2 4 4" />
+                                <path d="m17 7 3-3" />
+                                <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                                <path d="m9 11 4 4" />
+                                <path d="m5 19-3 3" />
+                            </svg>
+                            <span>Subcutaneous Injection</span>
+                        </button>
+                        <button type="button" class="checkout-dosage-btn" role="tab" aria-selected="false"
+                            data-dosage="oral">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.3">
+                                <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z" />
+                                <path d="m8.5 8.5 7 7" />
+                            </svg>
+                            <span>Oral Sublingual</span>
+                        </button>
+                    </div>
+
+                    <!-- STEP 1: SELECT TREATMENT -->
+                    <div class="checkout-step-header" id="stepTreatment">
+                        <span class="checkout-step-num">1</span>
+                        <h3 class="checkout-step-title">Select Treatment</h3>
+                    </div>
+                    <p class="checkout-step-subtitle">
+                        Choose between clinically proven GLP-1 or dual-action GIP/GLP-1 receptor agonist therapies.
+                    </p>
+
+                    <div class="checkout-treatment-grid" role="radiogroup" aria-label="Select Medication Treatment">
+                        <!-- Option 1: Semaglutide (Selected Default) -->
+                        <div class="checkout-treatment-card is-selected" role="radio" aria-checked="true"
+                            data-treatment="semaglutide" tabindex="0">
+                            <span class="treatment-badge-tag">Most Popular</span>
+                            <div class="checkout-treatment-left">
+                                <div class="checkout-radio-circle" aria-hidden="true">
+                                    <div class="checkout-radio-dot"></div>
+                                </div>
+                                <div class="checkout-treatment-info">
+                                    <h4 class="checkout-treatment-name">Semaglutide Injection (Compounded GLP-1)</h4>
+                                    <p class="checkout-treatment-desc">Personalized care options designed to support
+                                        your weight management journey</p>
+                                    <div class="checkout-treatment-price">From <strong>$249</strong> <span>/
+                                            month</span></div>
+                                </div>
+                            </div>
+                            <div class="checkout-treatment-visual">
+                                <img src="Assets/images/semaglutide.png" alt="Semaglutide Compounded GLP-1 Medication"
+                                    class="checkout-treatment-img" width="80" height="80">
+                            </div>
+                        </div>
+
+                        <!-- Option 2: Tirzepatide -->
+                        <div class="checkout-treatment-card" role="radio" aria-checked="false"
+                            data-treatment="tirzepatide" tabindex="0">
+                            <span class="treatment-badge-tag accent-gold">Advanced Dual-Action</span>
+                            <div class="checkout-treatment-left">
+                                <div class="checkout-radio-circle" aria-hidden="true">
+                                    <div class="checkout-radio-dot"></div>
+                                </div>
+                                <div class="checkout-treatment-info">
+                                    <h4 class="checkout-treatment-name">Tirzepatide Injection (Compounded GIP/GLP-1)
+                                    </h4>
+                                    <p class="checkout-treatment-desc">Next-generation therapy designed for enhanced
+                                        weight loss support</p>
+                                    <div class="checkout-treatment-price">From <strong>$349</strong> <span>/
+                                            month</span></div>
+                                </div>
+                            </div>
+                            <div class="checkout-treatment-visual">
+                                <img src="Assets/images/tirzepatide.png" alt="Tirzepatide Dual Incretin Medication"
+                                    class="checkout-treatment-img" width="80" height="80">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CLINICAL TRIALS STATS (2x2 Grid) -->
+                    <div class="checkout-stats-section" aria-label="Clinical Trial Metrics">
+                        <div class="checkout-stats-header">
+                            <h3 class="checkout-card-title fs-3 mb-1">
+                                Designed to Deliver — <em>As seen in clinical trials</em>
+                            </h3>
+                            <p class="checkout-card-subtitle mb-0">
+                                Statistically significant weight reduction validated in peer-reviewed medical
+                                publications.
+                            </p>
+                        </div>
+
+                        <div class="checkout-stats-grid">
+                            <div class="checkout-stat-card">
+                                <span class="checkout-stat-val">15%</span>
+                                <p class="checkout-stat-lbl">Average total body weight loss observed in clinical trials
+                                </p>
+                            </div>
+                            <div class="checkout-stat-card">
+                                <span class="checkout-stat-val">9 / 10</span>
+                                <p class="checkout-stat-lbl">Patients reported eliminated food noise &amp; cravings</p>
+                            </div>
+                            <div class="checkout-stat-card">
+                                <span class="checkout-stat-val">6.5x</span>
+                                <p class="checkout-stat-lbl">Greater fat loss compared to diet &amp; exercise alone</p>
+                            </div>
+                            <div class="checkout-stat-card">
+                                <span class="checkout-stat-val">92%</span>
+                                <p class="checkout-stat-lbl">Sustained long-term weight reduction past 12 months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 2: CHOOSE YOUR PLAN -->
+                    <div class="checkout-step-header" id="stepChoosePlan">
+                        <span class="checkout-step-num">2</span>
+                        <h3 class="checkout-step-title">Choose your plan</h3>
+                    </div>
+                    <p class="checkout-step-subtitle">
+                        Select your commitment duration. Multi-month plans lock in your price protection and maximize
+                        cumulative savings.
+                    </p>
+
+                    <div class="checkout-plan-grid" role="radiogroup" aria-label="Subscription Plan Duration">
+                        <!-- Option 1: Monthly -->
+                        <div class="checkout-plan-card" role="radio" aria-checked="false" data-plan="monthly"
+                            tabindex="0">
+                            <div class="checkout-plan-left">
+                                <div class="checkout-radio-circle" aria-hidden="true">
+                                    <div class="checkout-radio-dot"></div>
+                                </div>
+                                <div>
+                                    <h4 class="checkout-plan-title">Month-to-Month Plan</h4>
+                                    <p class="checkout-plan-desc">Billed monthly • Maximum flexibility, pause or cancel
+                                        anytime</p>
+                                </div>
+                            </div>
+                            <div class="checkout-plan-right">
+                                <div class="checkout-plan-price">$299</div>
+                                <div class="checkout-plan-period">/ month</div>
+                                <div class="checkout-plan-billing-note">$299 billed monthly</div>
+                            </div>
+                        </div>
+
+                        <!-- Option 2: 3-Month (Selected Default) -->
+                        <div class="checkout-plan-card is-selected" role="radio" aria-checked="true" data-plan="3-month"
+                            tabindex="0">
+                            <span class="plan-badge-tag">Best Value • Most Popular</span>
+                            <div class="checkout-plan-left">
+                                <div class="checkout-radio-circle" aria-hidden="true">
+                                    <div class="checkout-radio-dot"></div>
+                                </div>
+                                <div>
+                                    <h4 class="checkout-plan-title">3-Month Protocol</h4>
+                                    <p class="checkout-plan-desc">Billed quarterly • Complete foundational titration
+                                        cycle (Save $150 total)</p>
+                                </div>
+                            </div>
+                            <div class="checkout-plan-right">
+                                <div class="checkout-plan-price">$249</div>
+                                <div class="checkout-plan-period">/ month</div>
+                                <div class="checkout-plan-billing-note">$747 billed every 3 mos (Save $150)</div>
+                            </div>
+                        </div>
+
+                        <!-- Option 3: 6-Month -->
+                        <div class="checkout-plan-card" role="radio" aria-checked="false" data-plan="6-month"
+                            tabindex="0">
+                            <span class="plan-badge-tag"
+                                style="background-color: var(--color-primary-slate); color: #fff;">Maximum
+                                Savings</span>
+                            <div class="checkout-plan-left">
+                                <div class="checkout-radio-circle" aria-hidden="true">
+                                    <div class="checkout-radio-dot"></div>
+                                </div>
+                                <div>
+                                    <h4 class="checkout-plan-title">6-Month Full Transformation</h4>
+                                    <p class="checkout-plan-desc">Billed semi-annually • Optimal duration for
+                                        sustainable metabolic reset (Save $600)</p>
+                                </div>
+                            </div>
+                            <div class="checkout-plan-right">
+                                <div class="checkout-plan-price">$199</div>
+                                <div class="checkout-plan-period">/ month</div>
+                                <div class="checkout-plan-billing-note">$1,194 billed every 6 mos (Save $600)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DYNAMIC ORDER SUMMARY BOX -->
+                    <div class="checkout-summary-box" aria-label="Dynamic Order Summary">
+                        <div class="checkout-summary-header">
+                            <h3 class="checkout-summary-title">Order Summary</h3>
+                            <span class="checkout-summary-badge">Doctor Consultation Included</span>
+                        </div>
+
+                        <div class="checkout-summary-list">
+                            <div class="checkout-summary-row">
+                                <span>Selected Treatment:</span>
+                                <strong id="summaryTreatment">Semaglutide Injection (Compounded GLP-1)</strong>
+                            </div>
+                            <div class="checkout-summary-row">
+                                <span>Billing Protocol:</span>
+                                <strong id="summaryPlan">3-Month Protocol ($249/mo)</strong>
+                            </div>
+                            <div class="checkout-summary-row">
+                                <span>Physician Intake &amp; Rx Review:</span>
+                                <span><span class="checkout-summary-val-striked">$99.00</span><strong
+                                        class="checkout-summary-val-free">FREE</strong></span>
+                            </div>
+                            <div class="checkout-summary-row">
+                                <span>Temperature-Controlled Cold Shipping:</span>
+                                <span><span class="checkout-summary-val-striked">$25.00</span><strong
+                                        class="checkout-summary-val-free">FREE</strong></span>
+                            </div>
+                            <div class="checkout-summary-row">
+                                <span>Syringes &amp; Alcohol Prep Kit:</span>
+                                <strong class="checkout-summary-val-free">FREE</strong>
+                            </div>
+                            <div class="checkout-summary-row total-row">
+                                <span>Total Due Today:</span>
+                                <span class="checkout-summary-total-price" id="summaryTotal">$747.00</span>
+                            </div>
+                        </div>
+
+                        <!-- 100% Medical Eligibility Guarantee Callout -->
+                        <div class="checkout-guarantee-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            <div>
+                                <strong>100% Medical Eligibility Guarantee:</strong> If our licensed physician reviews
+                                your medical questionnaire and determines that GLP-1 treatment is not safe or clinically
+                                appropriate for you, your order is canceled immediately and refunded 100% in full.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CARD 6: CHECKOUT FORM (SHIPPING & PAYMENT) -->
+                <section class="checkout-card checkout-form-card" aria-label="Customer Checkout Form">
+                    <form id="checkoutForm" novalidate>
+
+                        <!-- STEP 3: SHIPPING INFORMATION -->
+                        <div class="checkout-step-header" id="stepShippingInfo">
+                            <span class="checkout-step-num">3</span>
+                            <h3 class="checkout-step-title">Shipping Information</h3>
+                        </div>
+                        <p class="checkout-step-subtitle">
+                            Where should our licensed pharmacy dispatch your discreet, temperature-monitored package?
+                        </p>
+
+                        <!-- First & Last Name -->
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="firstName" class="checkout-form-label">First Name <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="firstName" name="firstName"
+                                        placeholder="e.g. Sarah" required autocomplete="given-name">
+                                    <div class="checkout-field-error">Please enter your first name.</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="lastName" class="checkout-form-label">Last Name <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="lastName" name="lastName"
+                                        placeholder="e.g. Miller" required autocomplete="family-name">
+                                    <div class="checkout-field-error">Please enter your last name.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email & Phone -->
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="email" class="checkout-form-label">Email Address (for doctor updates) <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="email" class="checkout-input" id="email" name="email"
+                                        placeholder="name@example.com" required autocomplete="email">
+                                    <div class="checkout-field-error">Please enter a valid email address.</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="phone" class="checkout-form-label">Phone Number (SMS tracking) <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="tel" class="checkout-input" id="phone" name="phone"
+                                        placeholder="(555) 000-0000" required autocomplete="tel">
+                                    <div class="checkout-field-error">Please enter a valid 10-digit phone number.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery Street Address -->
+                        <div class="checkout-form-group">
+                            <label for="address" class="checkout-form-label">Delivery Street Address <span
+                                    class="required-star">*</span></label>
+                            <div class="checkout-input-wrap">
+                                <input type="text" class="checkout-input" id="address" name="address"
+                                    placeholder="123 Wellness Way" required autocomplete="street-address">
+                                <div class="checkout-field-error">Please enter your street address.</div>
+                            </div>
+                        </div>
+
+                        <!-- Apt / Suite / Unit -->
+                        <div class="checkout-form-group">
+                            <label for="aptSuite" class="checkout-form-label">Apt, Suite, Unit <span
+                                    class="text-muted fw-normal">(Optional)</span></label>
+                            <div class="checkout-input-wrap">
+                                <input type="text" class="checkout-input" id="aptSuite" name="aptSuite"
+                                    placeholder="Apt 4B" autocomplete="address-line2">
+                            </div>
+                        </div>
+
+                        <!-- Country & State -->
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="country" class="checkout-form-label">Country</label>
+                                <div class="checkout-input-wrap">
+                                    <select class="checkout-input checkout-select" id="country" name="country" disabled>
+                                        <option value="US" selected>United States (Nationwide Coverage)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="state" class="checkout-form-label">State <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <select class="checkout-input checkout-select" id="state" name="state" required
+                                        autocomplete="address-level1">
+                                        <option value="" disabled selected>Select your state</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                    <div class="checkout-field-error">Please select your delivery state.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- City & Zip Code -->
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="city" class="checkout-form-label">City <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="city" name="city"
+                                        placeholder="City name" required autocomplete="address-level2">
+                                    <div class="checkout-field-error">Please enter your city.</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="zipCode" class="checkout-form-label">ZIP / Postal Code <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="zipCode" name="zipCode"
+                                        placeholder="90210" required maxlength="10" autocomplete="postal-code">
+                                    <div class="checkout-field-error">Please enter a valid 5-digit ZIP code.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing Same Checkbox -->
+                        <label class="checkout-checkbox-wrap" for="sameBillingAddress">
+                            <input type="checkbox" class="checkout-checkbox" id="sameBillingAddress"
+                                name="sameBillingAddress" checked>
+                            <span class="checkout-checkbox-label">Billing address matches shipping address</span>
+                        </label>
+
+                        <!-- Expandable Billing Address Fields (Hidden by default) -->
+                        <div id="billingAddressFields"
+                            style="display: none; border-top: 1px dashed var(--color-border); padding-top: 1.8rem; margin-bottom: 2rem;">
+                            <h4 class="checkout-step-title fs-5 mb-3">Billing Address</h4>
+                            <div class="checkout-form-group">
+                                <label for="billingAddress" class="checkout-form-label">Billing Street Address</label>
+                                <input type="text" class="checkout-input" id="billingAddress" name="billingAddress"
+                                    placeholder="Street Address">
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6 checkout-form-group">
+                                    <label for="billingCity" class="checkout-form-label">Billing City</label>
+                                    <input type="text" class="checkout-input" id="billingCity" name="billingCity"
+                                        placeholder="City">
+                                </div>
+                                <div class="col-12 col-md-6 checkout-form-group">
+                                    <label for="billingZip" class="checkout-form-label">Billing ZIP</label>
+                                    <input type="text" class="checkout-input" id="billingZip" name="billingZip"
+                                        placeholder="ZIP Code">
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4" style="border-color: var(--color-border); opacity: 0.6;">
+
+                        <!-- STEP 4: PAYMENT INFORMATION -->
+                        <div class="checkout-step-header">
+                            <span class="checkout-step-num">4</span>
+                            <h3 class="checkout-step-title">Payment Information</h3>
+                        </div>
+                        <p class="checkout-step-subtitle">
+                            The card will be charged only after the licensed clinical services provider approves and
+                            prescribes the treatment.
+                        </p>
+
+                        <!-- Supported Card Brands Badges -->
+                        <div class="checkout-card-brands" aria-label="Accepted Credit Cards">
+                            <img src="Assets/images/card.png" alt="Visa" width="200" height="200">
+                        </div>
+
+                        <!-- Card Number Field -->
+                        <div class="checkout-form-group">
+                            <label for="cardNumber" class="checkout-form-label">Card Number <span
+                                    class="required-star">*</span></label>
+                            <div class="checkout-input-wrap">
+                                <input type="text" class="checkout-input" id="cardNumber" name="cardNumber"
+                                    placeholder="4000 1234 5678 9010" required maxlength="19" autocomplete="cc-number">
+                                <svg class="card-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                                </svg>
+                                <div class="checkout-field-error">Please enter a valid credit card number.</div>
+                            </div>
+                        </div>
+
+                        <!-- Expiry & CVV -->
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="cardExpiry" class="checkout-form-label">Expiration Date <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="cardExpiry" name="cardExpiry"
+                                        placeholder="MM / YY" required maxlength="7" autocomplete="cc-exp">
+                                    <div class="checkout-field-error">Please enter valid expiration (MM / YY).</div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 checkout-form-group">
+                                <label for="cardCvc" class="checkout-form-label">Security Code (CVV) <span
+                                        class="required-star">*</span></label>
+                                <div class="checkout-input-wrap">
+                                    <input type="text" class="checkout-input" id="cardCvc" name="cardCvc"
+                                        placeholder="123" required maxlength="4" autocomplete="cc-csc">
+                                    <div class="checkout-field-error">Please enter 3 or 4-digit CVV code.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Save Payment Checkbox -->
+                        <label class="checkout-checkbox-wrap" for="savePaymentInfo">
+                            <input type="checkbox" class="checkout-checkbox" id="savePaymentInfo" name="savePaymentInfo"
+                                checked>
+                            <span class="checkout-checkbox-label">Save payment details securely for seamless refill
+                                shipments (cancel anytime with 1 click)</span>
+                        </label>
+
+                        <!-- Primary Checkout Action Button -->
+                        <button type="submit" class="btn-checkout-submit" id="btnSubmitOrder">
+                            <span>Complete Checkout — <span id="btnPayAmount">$747.00</span></span>
+                            <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                        </button>
+
+                        <!-- Security Guarantees & Payment Badges -->
+                        <div class="checkout-security-row">
+                            <div class="checkout-safe-badge">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                                    aria-hidden="true">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span>Guaranteed Safe &amp; 256-Bit SSL Encrypted Checkout</span>
+                            </div>
+
+                            <div class="checkout-badges-icons-wrap" aria-label="Security certification badges">
+                                <img src="Assets/images/cards-2.png" alt="FDA cGMP Pharmacies" width="400" height="400">
+                            </div>
+                        </div>
+
+                    </form>
+                </section>
+
+                <!-- CARD 7: TRUST & CREDIBILITY PILLARS (USA Licensed Pharmacy, HIPAA Compliant, Free Discreet Shipping) -->
+                <section class="checkout-card checkout-trust-pillars-card" aria-label="Clinical Trust and Standards">
+                    <div class="checkout-trust-pillars">
+                        <!-- Pillar 1: USA Licensed Pharmacy -->
+                        <div class="checkout-trust-item">
+                            <div class="checkout-trust-icon-box" aria-hidden="true">
+                                <img src="Assets/images/trust-pharmacy.png" alt="USA Licensed Pharmacy"
+                                    class="checkout-trust-img" width="68" height="56" loading="lazy">
+                            </div>
+                            <div class="checkout-trust-content">
+                                <h3 class="checkout-trust-item-title">USA Licensed Pharmacy</h3>
+                                <p class="checkout-trust-item-desc">Peace of mind with every order — trusted quality,
+                                    expert care, and medications you can rely on.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2: HIPAA Compliant -->
+                        <div class="checkout-trust-item">
+                            <div class="checkout-trust-icon-box" aria-hidden="true">
+                                <img src="Assets/images/trust-hipaa.png" alt="HIPAA Compliant"
+                                    class="checkout-trust-img" width="68" height="62" loading="lazy">
+                            </div>
+                            <div class="checkout-trust-content">
+                                <h3 class="checkout-trust-item-title">HIPAA Compliant</h3>
+                                <p class="checkout-trust-item-desc">Strict U.S. standards to keep your medical
+                                    information safe and confidential.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3: Free Discreet Shipping -->
+                        <div class="checkout-trust-item">
+                            <div class="checkout-trust-icon-box" aria-hidden="true">
+                                <img src="Assets/images/trust-shipping.png" alt="Free Discreet Shipping"
+                                    class="checkout-trust-img" width="68" height="47" loading="lazy">
+                            </div>
+                            <div class="checkout-trust-content">
+                                <h3 class="checkout-trust-item-title">Free Discreet Shipping</h3>
+                                <p class="checkout-trust-item-desc">Enjoy complete privacy with every delivery — shipped
+                                    in secure, unmarked packaging at no additional cost.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CARD 8: FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+                <section class="checkout-faq-card" id="faqSection" aria-label="Frequently Asked Questions">
+                    <div class="checkout-faq-header">
+                        <span class="checkout-tag-pill">FAQs</span>
+                        <h2 class="checkout-card-title">
+                            Frequently asked <em>questions</em>
+                        </h2>
+                        <p class="checkout-card-subtitle mb-0">
+                            Common questions about our clinical telehealth checkout and prescription fulfillment
+                            process.
+                        </p>
+                    </div>
+
+                    <div class="faq-accordion" id="checkoutFaqAccordion">
+                        <!-- FAQ 1 -->
+                        <div class="faq-item is-active">
+                            <button type="button" class="faq-trigger" aria-expanded="true">
+                                <span class="faq-question">How does the online consultation process work?</span>
+                                <span class="faq-icon-toggle" aria-hidden="true">
+                                    <svg class="icon-plus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <svg class="icon-minus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-collapse">
+                                <div class="faq-answer-inner">
+                                    <p class="mb-0">
+                                        After checkout, you'll complete a brief 3-minute medical questionnaire about
+                                        your health history and goals. A licensed U.S. healthcare provider will review
+                                        your information to determine if treatment is appropriate.<br>
+
+                                        <b>Please note:</b> Completing checkout does not guarantee a prescription. All
+                                        prescriptions are subject to medical evaluation and approval by a licensed
+                                        healthcare provider. If approved, your prescription will be sent electronically
+                                        to the pharmacy for fulfillment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="faq-item">
+                            <button type="button" class="faq-trigger" aria-expanded="false">
+                                <span class="faq-question">Are these medications genuine and safe?</span>
+                                <span class="faq-icon-toggle" aria-hidden="true">
+                                    <svg class="icon-plus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <svg class="icon-minus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-collapse">
+                                <div class="faq-answer-inner">
+                                    <p class="mb-0">
+                                        Yes. We partner exclusively with certified, state-licensed 503A and 503B
+                                        compounding pharmacies in the United States. All active pharmaceutical
+                                        ingredients (APIs) undergo independent third-party certificate-of-analysis (CoA)
+                                        testing to ensure 99%+ chemical purity, sterile formulation, and correct
+                                        biological potency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="faq-item">
+                            <button type="button" class="faq-trigger" aria-expanded="false">
+                                <span class="faq-question">When will my order arrive?</span>
+                                <span class="faq-icon-toggle" aria-hidden="true">
+                                    <svg class="icon-plus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <svg class="icon-minus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-collapse">
+                                <div class="faq-answer-inner">
+                                    <p class="mb-0">
+                                        Once your intake is evaluated and approved by your physician (typically within
+                                        24 business hours), your medication is custom compounded and dispatched via
+                                        temperature-controlled express cold-pack shipping. Most patients receive their
+                                        delivery within 3–5 business days, with real-time SMS tracking updates.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="faq-item">
+                            <button type="button" class="faq-trigger" aria-expanded="false">
+                                <span class="faq-question">Can I cancel or adjust my subscription at any time?</span>
+                                <span class="faq-icon-toggle" aria-hidden="true">
+                                    <svg class="icon-plus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <svg class="icon-minus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-collapse">
+                                <div class="faq-answer-inner">
+                                    <p class="mb-0">
+                                        Yes. We believe in complete transparency. There are no lock-in contracts,
+                                        cancellation penalties, or hidden fees. You can easily adjust your shipping
+                                        frequency, modify your dosage, or cancel your subscription at any time directly
+                                        through your LycheMD Member Portal or by contacting our patient concierge team.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="faq-item">
+                            <button type="button" class="faq-trigger" aria-expanded="false">
+                                <span class="faq-question">What happens if the doctor determines I am not
+                                    eligible?</span>
+                                <span class="faq-icon-toggle" aria-hidden="true">
+                                    <svg class="icon-plus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="12" y1="5" x2="12" y2="19" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                    <svg class="icon-minus" viewBox="0 0 24 24" fill="none">
+                                        <line x1="5" y1="12" x2="19" y2="12" stroke-width="2.5"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="faq-collapse">
+                                <div class="faq-answer-inner">
+                                    <p class="mb-0">
+                                        Your safety is our utmost medical priority. If our board-certified physician
+                                        evaluates your health history and determines that GLP-1 or GIP therapy is not
+                                        clinically safe or suitable for you, your order is immediately canceled and you
+                                        will receive an automatic 100% full refund to your original payment method.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- ==========================================================================
+         Checkout Streamlined Footer (Minimal & Trust-Centric)
+         ========================================================================== -->
+    <footer class="checkout-footer" id="checkoutFooter" aria-label="Checkout Footer">
+        <div class="container">
+            <div class="checkout-footer-content">
+                <!-- Centered LycheMD Logo -->
+                <div class="checkout-footer-logo-wrap">
+                    <a href="index.html" class="checkout-footer-logo" aria-label="LycheMD Homepage">
+                        <span class="checkout-brand-title">LycheMD</span>
+                    </a>
+                </div>
+
+                <!-- Legal & Policy Navigation Links -->
+                <nav class="checkout-footer-nav" aria-label="Legal & Policies">
+                    <a href="#" class="checkout-footer-link">Privacy Policy</a>
+                    <span class="checkout-footer-sep" aria-hidden="true">|</span>
+                    <a href="#" class="checkout-footer-link">Terms and Conditions</a>
+                    <span class="checkout-footer-sep" aria-hidden="true">|</span>
+                    <a href="#" class="checkout-footer-link">HIPAA Privacy Policy</a>
+                    <span class="checkout-footer-sep" aria-hidden="true">|</span>
+                    <a href="#" class="checkout-footer-link">Shipping Policy</a>
+                </nav>
+
+                <!-- Clinical & Regulatory Disclaimer -->
+                <div class="checkout-footer-disclaimer">
+                    <p>
+                        <strong>Disclaimer:</strong> Results vary based on individual health, starting weight, and
+                        program adherence. Weight and inch loss are not guaranteed and require following clinician
+                        guidance, a reduced-calorie diet, and regular physical activity. Medications are prescribed at
+                        the discretion of licensed providers and may not be suitable for everyone. Always consult a
+                        healthcare professional before starting any weight-loss or longevity program. Clinical
+                        references are based on published studies of GLP-1 therapies combined with lifestyle changes.
+                        LycheMD is not affiliated with, nor does it claim equivalence to, any FDA-approved branded
+                        medications. All trademarks belong to their respective owners.
+                    </p>
+                </div>
+
+                <!-- Centered HIPAA Compliant Seal -->
+                <div class="checkout-footer-seal-wrap">
+                    <img src="Assets/images/hipaa.png" alt="HIPAA Compliant" class="checkout-footer-seal" width="60"
+                        height="60" loading="lazy">
+                </div>
+
+                <!-- Copyright Notice -->
+                <div class="checkout-footer-copyright">
+                    &copy; 2026 LycheMD | All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-lychemd">
+                <div class="modal-header border-0 pb-0">
+                    <div class="modal-brand-wrap">
+                        <span class="brand-title">LycheMD</span>
+                        <span class="modal-subtitle">Member Portal Login</span>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-3">
+                    <form id="memberLoginForm"
+                        onsubmit="event.preventDefault(); alert('Connecting to secure LycheMD member portal...');">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label form-label-custom">Email Address</label>
+                            <input type="email" class="form-control form-control-custom" id="loginEmail"
+                                placeholder="name@example.com" required autocomplete="email">
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <label for="loginPassword" class="form-label form-label-custom mb-0">Password</label>
+                                <a href="#" class="form-link-muted"
+                                    onclick="alert('Password reset link has been dispatched to your email.'); return false;">Forgot
+                                    password?</a>
+                            </div>
+                            <input type="password" class="form-control form-control-custom" id="loginPassword"
+                                placeholder="Enter your password" required autocomplete="current-password">
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="rememberMe" checked>
+                            <label class="form-check-label form-check-label-custom" for="rememberMe">
+                                Remember this device
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-hero-cta w-100 justify-content-center">
+                            <span>Sign In</span>
+                            <img src="Assets/images/Arrow.svg" alt="" class="cta-arrow" aria-hidden="true">
+                        </button>
+                    </form>
+                    <div
+                        class="modal-footer-custom text-center mt-4 pt-3 border-top border-secondary border-opacity-25">
+                        <span class="text-muted-custom">New to LycheMD?</span>
+                        <a href="category.html" class="link-gold ms-1" data-bs-dismiss="modal">Explore our
+                            treatments</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- GSAP 3 & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <!-- Lenis Smooth Scrolling Engine -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+    <!-- LycheMD Interactive Main Script -->
+    <script src="Assets/js/main.js?v=3.5"></script>
+
+    <!-- Checkout Application Script -->
+    <script src="Assets/js/checkout.js?v=1.0"></script>
+</body>
+
+</html>
